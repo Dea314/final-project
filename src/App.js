@@ -1,13 +1,5 @@
-import "./App.css";
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Final project</p>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <div className="App">Final project API</div>;
+};
 
 export default App;
