@@ -1,5 +1,5 @@
 const Documents = () => {
-  return <div>Documents</div>;
+  return <div>Documentation API</div>;
 };
 
 export default Documents;
