@@ -6,14 +6,14 @@ import Landing from "./components/Landing";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Routes>
-        <Route path="/" element={<div>Landing</div>} />
-        <Route path="/playground" element={<div>Playground</div>} />
-        <Route path="/documents" element={<div>Documents</div>} />
-        <Route path="/about" element={<div>About</div>} />
+        <Route path="/" index element={<Landing />} />
+        <Route path="/playground" element={<Playground />} />
+        <Route path="/documents" element={<Documents />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
