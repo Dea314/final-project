@@ -25,6 +25,7 @@ function Landing() {
       <hr />
 
       <Outlet />
+      <Footer />
     </div>
   );
 }
