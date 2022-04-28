@@ -3,19 +3,22 @@ import Documents from "./components/Documents";
 import Playground from "./components/Playground";
 import About from "./components/About";
 import Landing from "./components/Landing";
+import Home from "./components/Home";
 import "./App.css";
+import { Box } from "@mui/material";
 
 const App = () => {
   return (
-    <>
+    <Box>
       <Routes>
         <Route path="/" element={<Landing />}>
+          <Route index element={<Home />} />
           <Route path="/playground" element={<Playground />} />
           <Route path="/documents" element={<Documents />} />
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>
-    </>
+    </Box>
   );
 };
 
