@@ -1,33 +1,14 @@
-import { Outlet, NavLink } from "react-router-dom";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
-import React from "react";
-
-function Landing() {
+const Landing = () => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Landing</NavLink>
-          </li>
-          <li>
-            <NavLink to="/playground">Playground</NavLink>
-          </li>
-          <li>
-            <NavLink to="/documents">Docs</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-        </ul>
-      </nav>
-      <hr />
+    <>
+      <Navbar />
 
-      <Outlet />
       <Footer />
-    </div>
+    </>
   );
-}
+};
 
 export default Landing;
