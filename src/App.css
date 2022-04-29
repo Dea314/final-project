@@ -8,8 +8,15 @@ li {
   padding: 5px;
 }
 
-.footer-list {
-  display: inline-flex;
+.navbar-wrap {
+  /* display: flex; */
+  /* width: 100%;
+  height: auto; */
+  background-color: #607d8b;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 1em;
 }
 
 /* .App {

@@ -1,21 +1,22 @@
 import { Outlet, NavLink } from "react-router-dom";
 import React from "react";
 import { AppBar, Toolbar, CssBaseline } from "@mui/material";
+import logo from "../img/logo.gif";
 
 const Navbar = () => {
   return (
     <>
       <AppBar position="static">
         <CssBaseline />
+
         <Toolbar disableGutters>
+          <img className="main-logo" src={logo} alt="logo" width={250} />
           <NavLink
             to="/"
             variant="h5"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-            m={2}
-            pr={1}
           >
             Home
           </NavLink>

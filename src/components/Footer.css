@@ -1,0 +1,16 @@
+.footerContent {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #607d8b;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 7rem;
+  padding: 1em;
+}
+
+.git,
+.wbs {
+  height: 80px;
+}
