@@ -1,6 +1,7 @@
 import "./Footer.css";
 import githublogo from "../img/githublogo.png";
 import wbs from "../img/wbs.png";
+import fflogo from "../img/fflogo.png";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -14,6 +15,14 @@ const Footer = () => {
           </NavLink>
         </div>
         {/*  how to get link without localhost */}
+        <div>
+          <NavLink
+            to={{ pathname: "https://www.finalfantasyxiv.com/" }}
+            target="_blank"
+          >
+            <img className="fflogo" src={fflogo} alt="fflogo" />
+          </NavLink>
+        </div>
         <div>
           <NavLink
             to={{ pathname: "https://www.wbscodingschool.com/" }}
