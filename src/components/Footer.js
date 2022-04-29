@@ -1,17 +1,30 @@
-import { FaGithub } from "react-icons/fa";
+import "./Footer.css";
+import githublogo from "../img/githublogo.png";
+import wbs from "../img/wbs.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        <ul className="footer-list">
-          <li>Copyright 2022 &copy;</li>
-          <li>{<FaGithub />}</li>
-          <li>WBS</li>
-          <li>Made by Steffani, Francois & Danijela</li>
-        </ul>
-      </footer>
-    </div>
+    <>
+      <div className="footerContent">
+        <div>Copyright &copy; 2022 </div>
+        <div>
+          <NavLink to={{ pathname: "https://github.com" }} target="_blank">
+            <img className="git" src={githublogo} alt="githublogo" />
+          </NavLink>
+        </div>
+        {/*  how to get link without localhost */}
+        <div>
+          <NavLink
+            to={{ pathname: "https://www.wbscodingschool.com/" }}
+            target="_blank"
+          >
+            <img className="wbs" src={wbs} alt="wbs-logo" />
+          </NavLink>
+        </div>
+        <div>Made by Steffani, Francois & Danijela </div>
+      </div>
+    </>
   );
 };
 

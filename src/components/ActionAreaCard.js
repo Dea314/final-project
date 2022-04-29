@@ -6,6 +6,7 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
+import Behemoth from "../img/Behemoth.png";
 
 const ActionAreaCard = () => {
   return (
@@ -14,7 +15,7 @@ const ActionAreaCard = () => {
         <CardMedia
           component="img"
           height="250"
-          image="https://drive.google.com/drive/folders/150tlVJJZDG0a7f6HJQJRJgCiH54rYU6v"
+          image={Behemoth}
           alt="behemoth"
         />
         <CardContent>
