@@ -17,6 +17,7 @@ const Navbar = () => {
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            style={{ textDecoration: "none" }}
           >
             Home
           </NavLink>
@@ -27,6 +28,7 @@ const Navbar = () => {
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            style={{ textDecoration: "none" }}
           >
             Playground
           </NavLink>
@@ -37,6 +39,7 @@ const Navbar = () => {
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            style={{ textDecoration: "none" }}
           >
             Documents
           </NavLink>
@@ -47,6 +50,7 @@ const Navbar = () => {
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            style={{ textDecoration: "none" }}
           >
             About
           </NavLink>

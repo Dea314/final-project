@@ -16,10 +16,31 @@ const Form = () => {
           alignContent: "center",
         }}
       >
-        <TextField type="text" label="Search..." size="small" margin="normal" />
+        <TextField
+          className="search-field"
+          type="text"
+          label="Search..."
+          size="small"
+          margin="normal"
+        />
 
-        <Button type="submit" variant="contained" size="small" margin="normal">
-          Search
+        <Button
+          className="find-one-character"
+          type="submit"
+          variant="contained"
+          size="small"
+          margin="normal"
+        >
+          Search your character
+        </Button>
+        <Button
+          className="find-all-characters"
+          type="submit"
+          variant="contained"
+          size="small"
+          margin="normal"
+        >
+          Get all characters
         </Button>
       </Box>
     </div>
