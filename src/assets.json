@@ -1,0 +1,12 @@
+{
+  "elements": {
+    "fire": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Ffire.png?alt=media&token=d0cbd588-0757-451c-b040-79e71b451f48",
+    "holy": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fholy.png?alt=media&token=f007c315-7d64-4873-97ff-c983fea89975",
+    "ice": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fice.png?alt=media&token=b86b6a19-5be2-44ea-a8de-72aeb543f415",
+    "poison": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fpoison.png?alt=media&token=4f532eef-9ad7-4180-9b24-607ddc718690",
+    "thunder": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fthunder.png?alt=media&token=83853ee2-8141-4596-92c3-f87ef44c881e",
+    "water": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fwater.png?alt=media&token=a02c9fde-a3d7-45ce-bdbe-2475c7aa9ffe",
+    "wind": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fwind.png?alt=media&token=ed29d37b-d645-4637-a161-698cd8a18e61",
+    "earth": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fearth.png?alt=media&token=c605c9e6-cec2-4581-a799-c2a93ed0321a"
+  }
+}

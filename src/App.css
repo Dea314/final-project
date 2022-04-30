@@ -15,8 +15,13 @@ li {
   background-color: #607d8b;
   justify-content: space-between;
   align-items: center;
+
   /* margin: 0 auto; */
   padding: 1em;
+}
+
+.home {
+  display: flex;
 }
 
 /* .App {
