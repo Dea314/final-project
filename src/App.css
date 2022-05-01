@@ -1,33 +1,19 @@
 .active {
   color: red;
-  /* background-color: rgb(166, 232, 232); */
-}
-
-li {
-  list-style-type: none;
-  padding: 5px;
-}
-
-.navbar-wrap {
-  /* display: flex; */
-  /* width: 100%;
-  height: auto; */
-  background-color: #607d8b;
-  justify-content: space-between;
-  align-items: center;
-
-  /* margin: 0 auto; */
-  padding: 1em;
 }
 
 .home {
   display: flex;
 }
 
-/* .App {
-  text-align: center;
+.toolbar {
+  margin: 3rem;
 }
 
+.App {
+  display: flex;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;

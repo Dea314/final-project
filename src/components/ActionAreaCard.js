@@ -11,13 +11,14 @@ const assets = require("../assets.json");
 const ActionAreaCard = ({ character }) => {
   return (
     <>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 350 }}>
         <CardActionArea>
           <CardMedia
             component="img"
-            height="250"
+            height="350"
             image={character.img_url}
             alt={character.name}
+            sx={{ borderBottom: 1 }} // with thin border between pic and title?
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

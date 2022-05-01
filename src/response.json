@@ -11,7 +11,7 @@
       "weapon": ["Fire-breathing", "Blaze"],
       "game": "FINAL FANTASY XV (First appearance since Final Fantasy II)",
       "description": "As a final boss of Cutter's Cry, the origins of this nightmarish combination of lion, goat, and dragon have been furiously debated. Some deem the creature a cruel jest of the gods, while others believe it the twisted creation of forbidden sorcery.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Chimera-01-XIV.jpg?alt=media&token=7463e5ee-6b8b-480e-8f99-5b61a76bb180"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FChimera-01-XIV.jpg?alt=media&token=3637307f-a9a7-4637-94bf-2a1798b749a5"
     },
     {
       "id": "Torama-02-XIV",
@@ -52,7 +52,7 @@
       ],
       "game": "FINAL FANTASY XIV (First appearance since Final Fantasy II)",
       "description": "These predatory quadrupeds are feared for their unrivaled savagery. In the same manner, as its close cousin, the coeurl, the torama subdues its prey by unleashing electricity from the two whip-like appendages that frame its fang-lined jaws.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Torama-02-XIV.png?alt=media&token=0c678244-ffda-42bf-b7e5-d623699f7318"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FTorama-02-XIV.png?alt=media&token=78092729-e164-4075-b380-b13330447612"
     },
     {
       "id": "Golem-03-XIV",
@@ -69,7 +69,7 @@
       ],
       "game": "FINAL FANTASY XIV (First appearance since Final Fantasy I)",
       "description": "Golems are magical constructs of clay or stone that have been imbued with temporary life. Ancient tomes claim that the creation of these beings is only possible when the laws of nature are weakened by the chaotic influence of an Umbral calamity.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Golem-03-XIV.png?alt=media&token=126ddf7c-96ad-4f73-9904-b4de15be5a28"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FGolem-03-XIV.png?alt=media&token=bdbf30f1-ae31-42c1-9e78-a6f0e92cddd0"
     },
     {
       "id": "Harpeia-04-XI",
@@ -82,7 +82,7 @@
       "weapon": ["Magic spell", "Wings"],
       "game": "FINAL FANTASY XI",
       "description": "Even the normal attacks of these monsters count as special attacks, striking multiple players within range. Furthermore, they are potent spellcasters, capable of casting enfeebling and elemental magics to hinder and harm their foes, and may even have special job abilities as well.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Harpeia-04-XI.png?alt=media&token=b7e540ca-b2ec-4cd3-ac08-05f67044963e"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FHarpeia-04-XI.png?alt=media&token=eba3c0a8-2f11-4980-ad57-f269143fe7f3"
     },
     {
       "id": "Danbania-05-XII",
@@ -95,7 +95,7 @@
       "weapon": ["Mandible"],
       "game": "FINAL FANTASY XII",
       "description": "Is an ichthian/piranha-type enemy, and is docile until attacked. They may pop out of the sand sea when the player approaches an edge of an area. The Danbania in both sand seas have identical stats, but a Lv.10 version may appear on Ogir-Yensa and a Lv.14 one may appear on Nam-Yensa. Argyle Armlets can be rarely poached from them.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Danbania-05-XII.png?alt=media&token=b4650961-fd3a-44d3-8250-11ab98dba576"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FDanbania-05-XII.png?alt=media&token=4ef09a4e-a9d4-4b65-b773-4f6636ed808f"
     },
     {
       "id": "Behemoth-12-XIV",
@@ -108,7 +108,7 @@
       "weapon": ["Spell Flare", "Maelstrom", "Meteor"],
       "game": "FINAL FANTASY XIV (First appearance since Final Fantasy IIl)",
       "description": "First appeared as a boss in Final Fantasy II. After defeating him, Behemoths appear as normal enemies in the forests near Mysidia.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/Behemoth-12-XIV.png?alt=media&token=cd4230b1-5518-4828-a439-17b0f8b2c850"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FBehemoth-12-XIV.png?alt=media&token=0e53b730-53f3-4d93-9e7c-d576f1c74942"
     }
   ]
 }
