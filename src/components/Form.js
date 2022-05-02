@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, TextField, Button } from "@mui/material";
 
-const Form = () => {
+const Form = ({ handleSubmit }) => {
   return (
     <div>
       <Box
+        onSubmit={handleSubmit}
         m="auto"
         component="form"
         sx={{
@@ -17,6 +18,7 @@ const Form = () => {
         }}
       >
         <TextField
+          name="searchQuery"
           className="search-field"
           type="text"
           label="Search..."
