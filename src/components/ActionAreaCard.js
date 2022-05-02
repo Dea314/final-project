@@ -18,7 +18,7 @@ const ActionAreaCard = ({ character }) => {
             height="350"
             image={character.img_url}
             alt={character.name}
-            sx={{ borderBottom: 1 }} // with thin border between pic and title?
+            sx={{ border: 1, borderColor: "grey.500" }} // with thin border between pic and title?
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

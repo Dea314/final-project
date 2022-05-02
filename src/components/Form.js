@@ -10,6 +10,7 @@ const Form = () => {
         sx={{
           width: "30%",
           marginTop: "50px",
+          marginRight: "2rem",
           justifyContent: "center",
           display: "flex",
           flexDirection: "row",
@@ -20,8 +21,8 @@ const Form = () => {
           className="search-field"
           type="text"
           label="Search..."
-          size="small"
-          margin="normal"
+          size="medium"
+          style={{ textDecoration: "none", margin: "1.5rem" }}
         />
 
         <Button
@@ -30,6 +31,7 @@ const Form = () => {
           variant="contained"
           size="small"
           margin="normal"
+          style={{ textDecoration: "none", margin: "1rem" }}
         >
           Search your character
         </Button>
@@ -37,8 +39,8 @@ const Form = () => {
           className="find-all-characters"
           type="submit"
           variant="contained"
-          size="small"
-          margin="normal"
+          size="medium"
+          style={{ textDecoration: "none", margin: "1rem" }}
         >
           Get all characters
         </Button>
