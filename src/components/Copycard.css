@@ -1,0 +1,42 @@
+.card {
+  flex: initial;
+  position: relative;
+  height: 52rem;
+  width: 350px;
+  -moz-perspective: 200rem;
+  perspective: 200rem;
+  margin: 2rem;
+}
+.card__side {
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  border-radius: 5px;
+  overflow: hidden;
+  /* The image is overflowing the parent. */
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+}
+/* .card__side--front {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(30, 11, 54, 0.65),
+      rgba(202, 55, 130, 0.7)
+    ),
+    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+} */
+.card__side--back {
+  /* background-color: #fff; */
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}

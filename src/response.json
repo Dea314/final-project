@@ -52,7 +52,7 @@
       ],
       "game": "FINAL FANTASY XIV (First appearance since Final Fantasy II)",
       "description": "These predatory quadrupeds are feared for their unrivaled savagery. In the same manner, as its close cousin, the coeurl, the torama subdues its prey by unleashing electricity from the two whip-like appendages that frame its fang-lined jaws.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FTorama-02-XIV.png?alt=media&token=78092729-e164-4075-b380-b13330447612"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FTorama-02-XIV.png?alt=media&token=ccb10dbe-f762-4c4d-999a-1bc2341ae62a"
     },
     {
       "id": "Golem-03-XIV",
@@ -108,7 +108,7 @@
       "weapon": ["Spell Flare", "Maelstrom", "Meteor"],
       "game": "FINAL FANTASY XIV (First appearance since Final Fantasy IIl)",
       "description": "First appeared as a boss in Final Fantasy II. After defeating him, Behemoths appear as normal enemies in the forests near Mysidia.",
-      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FBehemoth-12-XIV.png?alt=media&token=0e53b730-53f3-4d93-9e7c-d576f1c74942"
+      "img_url": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/characters%2FBehemoth-12-XIV.png?alt=media&token=e7ed63a4-fcac-43d1-a827-19eddc937e9f"
     }
   ]
 }

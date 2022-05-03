@@ -1,5 +1,6 @@
 import Form from "./Form";
 import { useState, useEffect } from "react";
+import Copycard from "./Copycard";
 
 const Playground = ({ response }) => {
   const [searchQuery, setSearchQuery] = useState();
@@ -32,9 +33,12 @@ const Playground = ({ response }) => {
     <>
       <div>Playground characters</div>
       <Form handleSubmit={handleSubmit} />
+
+
       {playgroundCharacters.map(character => <div>{character.name}</div>)}
+
+<Copycard />
     </>
   );
 };
-
 export default Playground;

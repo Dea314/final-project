@@ -12,19 +12,21 @@ const App = () => {
   console.log(response);
 
   return (
-    <Box>
-      <Routes>
-        <Route path="/" element={<Landing />}>
-          <Route index element={<Home response={response} />} />
-          <Route
-            path="/playground"
-            element={<Playground response={response} />}
-          />
-          <Route path="/documents" element={<Documents />} />
-          <Route path="/about" element={<About />} />
-        </Route>
-      </Routes>
-    </Box>
+    <div className="bar">
+      <Box className="main-box">
+        <Routes>
+          <Route path="/" element={<Landing />}>
+            <Route index element={<Home response={response} />} />
+            <Route
+              path="/playground"
+              element={<Playground response={response} />}
+            />
+            <Route path="/documents" element={<Documents />} />
+            <Route path="/about" element={<About />} />
+          </Route>
+        </Routes>
+      </Box>
+    </div>
   );
 };
 
