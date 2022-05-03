@@ -12,15 +12,12 @@ const Playground = ({ response }) => {
     fetch(
       `http://localhost:5050/playground?${
         searchQuery?.length && `name=${searchQuery}`
-      }`,
-      {
-        mode: "cors",
-      }
+      }`
     )
       .then((res) => res.json())
       .then((data) => {
         console.log("data", data);
-        setPlaygroundChracters(data);
+        setPlaygroundChracters(data.characters);
       })
       .catch((err) => console.log(err));
   }, [searchQuery]);
@@ -35,7 +32,7 @@ const Playground = ({ response }) => {
     <>
       <div>Playground characters</div>
       <Form handleSubmit={handleSubmit} />
-      {/* mapping over state to display the data */}
+      {playgroundCharacters.map(character => <div>{character.name}</div>)}
     </>
   );
 };
