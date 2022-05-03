@@ -12,3 +12,21 @@
 .toolbar {
   margin: 3rem;
 }
+li {
+  list-style-type: none;
+}
+li:hover {
+  color: rgb(0, 38, 255);
+  cursor: pointer;
+}
+
+.wrapper-all {
+  text-align: justify;
+  padding: 10px;
+}
+.wrapper-text {
+  margin: auto 2rem;
+}
+.title {
+  padding: 15px 0;
+}

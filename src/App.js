@@ -4,7 +4,6 @@ import Playground from "./components/Playground";
 import About from "./components/About";
 import Landing from "./components/Landing";
 import Home from "./components/Home";
-import Copycard from "./components/Copycard";
 import "./App.css";
 import { Box } from "@mui/material";
 const response = require("./response.json");
@@ -24,7 +23,6 @@ const App = () => {
             />
             <Route path="/documents" element={<Documents />} />
             <Route path="/about" element={<About />} />
-            <Route path="/copycard" element={<Copycard />} />
           </Route>
         </Routes>
       </Box>

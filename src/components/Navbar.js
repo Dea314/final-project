@@ -54,16 +54,6 @@ const Navbar = () => {
           >
             About
           </NavLink>
-          <NavLink
-            to="/copycard"
-            variant="h5"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-            style={{ textDecoration: "none", margin: "1rem" }}
-          >
-            Copycard
-          </NavLink>
         </Toolbar>
       </AppBar>
       <div>

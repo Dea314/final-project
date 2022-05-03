@@ -1,46 +1,42 @@
 .card {
-  perspective: 150rem;
+  flex: initial;
   position: relative;
-  height: 40rem;
-  max-width: 400px;
+  height: 52rem;
+  width: 350px;
+  -moz-perspective: 200rem;
+  perspective: 200rem;
   margin: 2rem;
-  box-shadow: none;
-  background: none;
 }
-
-.card-side {
-  height: 35rem;
-  border-radius: 15px;
+.card__side {
   transition: all 0.8s ease;
-  backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
-  padding: 2rem;
-  color: white;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  border-radius: 5px;
+  overflow: hidden;
+  /* The image is overflowing the parent. */
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
-
-.card-side.back {
-  transform: rotateY(-180deg);
-  background-color: #4158d0;
+/* .card__side--front {
   background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
-
-.card-side.front {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-}
-
-.card:hover .card-side.front {
+      to right bottom,
+      rgba(30, 11, 54, 0.65),
+      rgba(202, 55, 130, 0.7)
+    ),
+    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+} */
+.card__side--back {
+  /* background-color: #fff; */
   transform: rotateY(180deg);
 }
-
-.card:hover .card-side.back {
-  transform: rotateY(0deg);
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
 }

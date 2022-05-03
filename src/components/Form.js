@@ -37,7 +37,7 @@ const Form = ({ handleSubmit }) => {
         >
           Search your character
         </Button>
-        <Button
+        {/* <Button
           className="find-all-characters"
           type="submit"
           variant="contained"
@@ -45,7 +45,7 @@ const Form = ({ handleSubmit }) => {
           style={{ textDecoration: "none", margin: "1rem" }}
         >
           Get all characters
-        </Button>
+        </Button> */}
       </Box>
     </div>
   );

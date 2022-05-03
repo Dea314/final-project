@@ -1,5 +1,6 @@
 import Form from "./Form";
 import { useState, useEffect } from "react";
+import Copycard from "./Copycard";
 
 const Playground = ({ response }) => {
   const [searchQuery, setSearchQuery] = useState();
@@ -35,9 +36,8 @@ const Playground = ({ response }) => {
     <>
       <div>Playground characters</div>
       <Form handleSubmit={handleSubmit} />
-      {/* mapping over state to display the data */}
+      <Copycard />
     </>
   );
 };
-
 export default Playground;
