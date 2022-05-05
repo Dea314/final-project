@@ -6,6 +6,7 @@ import Landing from "./components/Landing";
 import Home from "./components/Home";
 import "./App.css";
 import { Box } from "@mui/material";
+import ScrollToTop from "react-scroll-to-top";
 const response = require("./response.json");
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           </Route>
         </Routes>
       </Box>
+      <ScrollToTop smooth color="#6f00ff" className="scroll_to_top"/>
     </div>
   );
 };
