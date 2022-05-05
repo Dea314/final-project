@@ -11,7 +11,7 @@ const Playground = ({ response }) => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5050/playground?${
+      `https://gamecharactersapi.herokuapp.com/playground?${
         searchQuery?.length && `name=${searchQuery}`
       }`
     )
@@ -34,10 +34,11 @@ const Playground = ({ response }) => {
       <div>Playground characters</div>
       <Form handleSubmit={handleSubmit} />
 
+      {playgroundCharacters.map((character) => (
+        <div>{character.name}</div>
+      ))}
 
-      {playgroundCharacters.map(character => <div>{character.name}</div>)}
-
-<Copycard />
+      <Copycard />
     </>
   );
 };

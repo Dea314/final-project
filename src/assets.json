@@ -7,6 +7,10 @@
     "thunder": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fthunder.png?alt=media&token=83853ee2-8141-4596-92c3-f87ef44c881e",
     "water": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fwater.png?alt=media&token=a02c9fde-a3d7-45ce-bdbe-2475c7aa9ffe",
     "wind": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fwind.png?alt=media&token=ed29d37b-d645-4637-a161-698cd8a18e61",
-    "earth": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fearth.png?alt=media&token=c605c9e6-cec2-4581-a799-c2a93ed0321a"
+    "earth": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fearth.png?alt=media&token=c605c9e6-cec2-4581-a799-c2a93ed0321a",
+    "clay": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fclay-brick.png?alt=media&token=4d8747d4-8be3-458f-a786-2bb22cce7e98",
+    "rock": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Frock.png?alt=media&token=144710ff-963c-4ecb-a718-d81e719cf255",
+    "air": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fair-zigzag.png?alt=media&token=997959d3-31ea-4027-9617-cacf099e8292",
+    "dark": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fbat.png?alt=media&token=7fe774d5-eaf6-48cb-8122-a3c176bd60f4"
   }
 }
