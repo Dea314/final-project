@@ -20,13 +20,13 @@ li:hover {
   cursor: pointer;
 }
 
-.wrapper-all {
-  text-align: justify;
-  padding: 10px;
-}
-.wrapper-text {
-  margin: auto 2rem;
-}
 .title {
   padding: 15px 0;
+}
+
+.wrapper-search {
+  margin: 2rem;
+}
+.formcontrol {
+  width: 15%;
 }
