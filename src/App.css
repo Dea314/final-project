@@ -30,3 +30,20 @@ li:hover {
 .formcontrol {
   width: 15%;
 }
+
+
+.scroll_to_top {
+  background-color: rgb(237, 219, 219);
+  right: 40px;
+  bottom: 180px;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 50px;
+  height: 50px;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
+  border: none;
+  outline: none;
+}
