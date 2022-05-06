@@ -81,44 +81,76 @@ const Documents = () => {
           </li>
           <li>
             <Link
-              to="single-index"
-              spy={true}
-              smooth={true}
-              style={{ textDecoration: "none" }}
-            >
-              Get a single character by index
-            </Link>
-          </li>
-          <li>
-            <Link
               to="single-name"
               spy={true}
               smooth={true}
               style={{ textDecoration: "none" }}
             >
-              Get a single character by name
+              Get a character by name
             </Link>
           </li>
           <li>
             <Link
-              to="single-category"
+              to="by-element"
               spy={true}
               smooth={true}
               style={{ textDecoration: "none" }}
             >
-              Get single character by category
+              Get a character by element
             </Link>
           </li>
           <li>
             <Link
-              to="get-random"
+              to="by-strength"
               spy={true}
               smooth={true}
               style={{ textDecoration: "none" }}
             >
-              Get a random character
+              Get a character by strength
             </Link>
           </li>
+          <li>
+            <Link
+              to="by-weakness"
+              spy={true}
+              smooth={true}
+              style={{ textDecoration: "none" }}
+            >
+              Get a character by weakness
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="by-resistance"
+              spy={true}
+              smooth={true}
+              style={{ textDecoration: "none" }}
+            >
+              Get a character by resistance
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="by-weapon"
+              spy={true}
+              smooth={true}
+              style={{ textDecoration: "none" }}
+            >
+              Get a character by weapon
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="by-location"
+              spy={true}
+              smooth={true}
+              style={{ textDecoration: "none" }}
+            >
+              Get a character by location
+            </Link>
+          </li>
+
+
           <li>
             <Link
               to="location"
@@ -129,6 +161,8 @@ const Documents = () => {
               Location
             </Link>
           </li>
+
+
           <li>
             <Link
               to="errors"
@@ -152,9 +186,9 @@ const Documents = () => {
         </ul>
       </div>
       <div className="wrapper-text">
-        <h1>DOCUMENTATION ABOUT API</h1>
+        <h1 align="center">API Documentation</h1>
 
-        <Typography variant="h3" align="center" className="title">
+        <Typography variant="h4" align="center" className="title">
           <div id="introduction">Introduction</div>
         </Typography>
         <Typography align="center">
@@ -195,8 +229,11 @@ const Documents = () => {
            want to contribure to this project feel free to contact us.
         </Typography>
         <Typography variant="h4" align="center" className="title">
-          <div id="endpoints">Characters endpoints</div>
+          <div id="endpoints">Character Endpoints</div>
         </Typography>
+        <Typography variant="h5" align="center" className="title">
+            <div id="attributes">Character Attributes</div>
+          </Typography>
         <Typography>
            <CustomizedTables/>
         </Typography>
@@ -204,156 +241,118 @@ const Documents = () => {
           <div id="get-all">Get all characters</div>
         </Typography>
         <Typography>
-          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
-          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
-          cotton candy. Sesame snaps macaroon toffee dragée apple pie cotton
-          candy macaroon topping. Sweet roll croissant sesame snaps jelly-o
-          marshmallow cookie jelly-o. Toffee sweet sugar plum cookie cookie
-          jujubes danish macaroon. Cheesecake ice cream danish ice cream jelly-o
-          lemon drops candy canes apple pie. Chupa chups jelly-o sesame snaps
-          sweet roll halvah toffee. Cotton candy sweet roll pie sesame snaps
-          wafer. Topping marzipan brownie powder pie caramels halvah jujubes.
-          Shortbread caramels danish donut oat cake soufflé. Sugar plum gummies
-          chupa chups dragée candy pudding. Apple pie shortbread croissant
-          gummies cheesecake topping gingerbread carrot cake icing. Cotton candy
-          cookie icing apple pie cookie. Soufflé sesame snaps shortbread cookie
-          jujubes cookie. Sweet fruitcake dragée sweet roll cake. Marzipan
-          pudding jelly beans cake pastry. Gingerbread jelly beans caramels
-          pastry gummies. Sweet candy canes caramels candy canes muffin
-          liquorice cake cheesecake halvah. Brownie carrot cake dessert cake
-          icing. Sesame snaps tiramisu ice cream candy canes danish toffee
-          brownie lollipop cake. Pudding cake caramels candy canes cookie
-          biscuit shortbread. Caramels candy canes biscuit dessert chocolate
-          cake muffin gummi bears tootsie roll fruitcake. Liquorice sweet roll
-          dragée chocolate cake marzipan. Croissant chupa chups cupcake pudding
-          sugar plum sugar plum donut pastry cupcake.
+          Endpoint that retrieve information from all characters.
         </Typography>
-        <Typography variant="h4" align="center" className="title">
-          <div id="single-index">Get a single character by index</div>
+        <Typography align="center" className="routesURL">
+         /playground   
         </Typography>
-        <Typography>
-          Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
-          canes. Apple pie sweet roll danish ice cream cake cake cake dessert
-          halvah. Jujubes carrot cake sweet lollipop sweet cake bonbon topping.
-          Topping cupcake icing jujubes macaroon. Biscuit powder jujubes wafer
-          tootsie roll chocolate cake. Oat cake liquorice cake croissant oat
-          cake chocolate fruitcake cheesecake. Lemon drops sweet marzipan ice
-          cream biscuit chocolate cake biscuit. Gummi bears sweet biscuit
-          gummies jelly-o toffee macaroon pie apple pie. Fruitcake chupa chups
-          fruitcake gingerbread oat cake lollipop lemon drops croissant bear
-          claw. Shortbread apple pie pudding macaroon cookie liquorice dessert.
-          Carrot cake cupcake sesame snaps cake macaroon sweet roll toffee
-          chocolate cake sesame snaps. Cake jelly-o sesame snaps jujubes
-          marzipan marzipan cheesecake. Topping tiramisu muffin jujubes
-          chocolate bar lemon drops caramels shortbread toffee. Lollipop cupcake
-          cotton candy croissant gingerbread. Soufflé jelly-o apple pie wafer
-          tiramisu marzipan. Cake tart jelly-o danish dragée muffin. Cookie
-          cookie bonbon chocolate sugar plum toffee icing. Brownie carrot cake
-          bonbon sesame snaps jujubes wafer brownie. Lollipop croissant
-          cheesecake gingerbread cheesecake soufflé tart chocolate fruitcake.
-          Dessert bear claw candy canes oat cake jujubes cake candy sweet chupa
-          chups. Icing pudding cupcake gingerbread toffee dessert. Pudding bear
-          claw muffin marshmallow muffin oat cake. Marshmallow shortbread wafer
-          marshmallow icing toffee. Candy canes caramels halvah chupa chups
-          macaroon gummi bears jelly-o sugar plum. Donut pudding donut bear claw
-          fruitcake marzipan powder bear claw ice cream. Lemon drops toffee
-          candy cake marshmallow.
-        </Typography>
+
+
+
         <Typography variant="h4" align="center" className="title">
           <div id="single-name">Get a single character by name</div>
         </Typography>
         <Typography>
-          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
-          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
-          cotton candy. Sesame snaps macaroon toffee dragée apple pie cotton
-          candy macaroon topping. Sweet roll croissant sesame snaps jelly-o
-          marshmallow cookie jelly-o. Toffee sweet sugar plum cookie cookie
-          jujubes danish macaroon. Cheesecake ice cream danish ice cream jelly-o
-          lemon drops candy canes apple pie. Chupa chups jelly-o sesame snaps
-          sweet roll halvah toffee. Cotton candy sweet roll pie sesame snaps
-          wafer. Topping marzipan brownie powder pie caramels halvah jujubes.
-          Shortbread caramels danish donut oat cake soufflé. Sugar plum gummies
-          chupa chups dragée candy pudding. Apple pie shortbread croissant
-          gummies cheesecake topping gingerbread carrot cake icing.
+        Endpoint that retrieve information by the name of the character, the
+         query is not case sensitive, so go ahead and use upper or lower case to 
+         GET the data.
         </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?name=chimera   
+        </Typography>
+
+
         <Typography variant="h4" align="center" className="title">
-          <div id="single-category">Get single character by category</div>
+          <div id="by-element">Get characters by key elements</div>
         </Typography>
         <Typography>
-          Jelly danish chocolate chocolate oat cake cake candy. Sweet cookie
-          toffee lemon drops marzipan lollipop. Danish cake sugar plum cake oat
-          cake gummi bears chocolate lemon drops gummies. Marzipan cake candy
-          canes soufflé gummi bears gummi bears brownie oat cake candy. Pastry
-          chocolate bar topping candy canes wafer chocolate cake croissant
-          gummies jelly-o. Apple pie liquorice muffin apple pie pudding
-          fruitcake. Dessert biscuit chocolate cake lemon drops pastry apple pie
-          jelly beans sweet jelly-o. Jelly beans chocolate cake dragée cake
-          carrot cake. Tiramisu dessert pudding pudding bear claw. Dessert
-          danish cotton candy chocolate bar oat cake oat cake. Cake gingerbread
-          chocolate cake sweet carrot cake chupa chups jelly wafer croissant.
-          Halvah cake carrot cake jelly beans chocolate bar danish toffee wafer
-          jelly. Biscuit cake lemon drops danish carrot cake sesame snaps pastry
-          candy canes. Apple pie sweet roll danish ice cream cake cake cake
-          dessert halvah. Jujubes carrot cake sweet lollipop sweet cake bonbon
-          topping. Topping cupcake icing jujubes macaroon. Biscuit powder
-          jujubes wafer tootsie roll chocolate cake. Oat cake liquorice cake
-          croissant oat cake chocolate fruitcake cheesecake. Lemon drops sweet
-          marzipan ice cream biscuit chocolate cake biscuit. Gummi bears sweet
-          biscuit gummies jelly-o toffee macaroon pie apple pie. Fruitcake chupa
-          chups fruitcake gingerbread oat cake lollipop lemon drops croissant
-          bear claw. Shortbread apple pie pudding macaroon cookie liquorice
-          dessert. Carrot cake cupcake sesame snaps cake macaroon sweet roll
-          toffee chocolate cake sesame snaps. Cake jelly-o sesame snaps jujubes
-          marzipan marzipan cheesecake. Topping tiramisu muffin jujubes
-          chocolate bar lemon drops caramels shortbread toffee.
+        This endpoint queries an especific element that is contained within 
+        the chacacter data. You can query one or multiple elements at once adding
+        comma (,) in between to find the characters with the chosen elements.
         </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?elements=fire,water,holy  
+        </Typography>
+        
+
+
         <Typography variant="h4" align="center" className="title">
-          <div id="get-random"> Get a random character</div>
+          <div id="by-strength">Get characters by strength</div>
         </Typography>
         <Typography>
-          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
-          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
-          cotton candy. Sesame snaps macaroon toffee dragée apple pie cotton
-          candy macaroon topping. Sweet roll croissant sesame snaps jelly-o
-          marshmallow cookie jelly-o. Toffee sweet sugar plum cookie cookie
-          jujubes danish macaroon. Cheesecake ice cream danish ice cream jelly-o
-          lemon drops candy canes apple pie. Chupa chups jelly-o sesame snaps
-          sweet roll halvah toffee. Cotton candy sweet roll pie sesame snaps
-          wafer. Topping marzipan brownie powder pie caramels halvah jujubes.
-          Shortbread caramels danish donut oat cake soufflé. Sugar plum gummies
-          chupa chups dragée candy pudding. Apple pie shortbread croissant
-          gummies cheesecake topping gingerbread carrot cake icing.
+        This endpoint queries an especific strength that a chacacter
+         has. You can query more options between commas and only the 
+         characters that has both inputs will be displayed.        
         </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?strength=attack blockers,size  
+        </Typography>
+
+
+        <Typography variant="h4" align="center" className="title">
+          <div id="by-weakness">Get characters by weakness</div>
+        </Typography>
+        <Typography>
+        This endpoint queries an especific weakness that a chacacter 
+        has. You can query more options between commas and only the 
+        characters that has all inputs will be displayed.        
+        </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?weakness=slow movement,low hp
+        </Typography>
+
+
+        <Typography variant="h4" align="center" className="title">
+          <div id="by-resistance">Get characters by resistance</div>
+        </Typography>
+        <Typography>
+        This endpoint queries one or more resistance data per character. 
+        You can also query more options between commas and only the 
+        characters that has all inputs will be displayed.        
+        </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?resistance=poison,confuse,death
+        </Typography>
+
+
+        <Typography variant="h4" align="center" className="title">
+          <div id="by-weapon">Get characters by weapon</div>
+        </Typography>
+        <Typography>
+        This endpoint queries one or more weapons per character. 
+        You can query more options between commas and only the 
+        characters that has all inputs will be displayed.        
+        </Typography>
+        <Typography align="center" className="routesURL">
+         /playground?weapon=confuse,aereo,meteor
+        </Typography>
+
+
+        <Typography variant="h4" align="center" className="title">
+          <div id="by-location">Get characters by location</div>
+        </Typography>
+        <Typography>
+        This endpoint queries locations that a character was seen through 
+        out the game. You can query more options between commas and only 
+        the characters that has been in all places mentioned will be displayed.        
+        </Typography>
+        <Typography align="center" className="routesURL">
+        /playground?location=Palamecia,Pandaemonium
+        </Typography>
+
+
+
+
+
+
+
+
+
         <Typography variant="h3" align="center" className="title">
           <div id="location"> Location</div>
         </Typography>
         <Typography>
           Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
-          canes. Apple pie sweet roll danish ice cream cake cake cake dessert
-          halvah. Jujubes carrot cake sweet lollipop sweet cake bonbon topping.
-          Topping cupcake icing jujubes macaroon. Biscuit powder jujubes wafer
-          tootsie roll chocolate cake. Oat cake liquorice cake croissant oat
-          cake chocolate fruitcake cheesecake. Lemon drops sweet marzipan ice
-          cream biscuit chocolate cake biscuit. Gummi bears sweet biscuit
-          gummies jelly-o toffee macaroon pie apple pie. Fruitcake chupa chups
-          fruitcake gingerbread oat cake lollipop lemon drops croissant bear
-          claw. Shortbread apple pie pudding macaroon cookie liquorice dessert.
-          Carrot cake cupcake sesame snaps cake macaroon sweet roll toffee
-          chocolate cake sesame snaps. Cake jelly-o sesame snaps jujubes
-          marzipan marzipan cheesecake. Topping tiramisu muffin jujubes
-          chocolate bar lemon drops caramels shortbread toffee. Lollipop cupcake
-          cotton candy croissant gingerbread. Soufflé jelly-o apple pie wafer
-          tiramisu marzipan. Cake tart jelly-o danish dragée muffin. Cookie
-          cookie bonbon chocolate sugar plum toffee icing. Brownie carrot cake
-          bonbon sesame snaps jujubes wafer brownie. Lollipop croissant
-          cheesecake gingerbread cheesecake soufflé tart chocolate fruitcake.
-          Dessert bear claw candy canes oat cake jujubes cake candy sweet chupa
-          chups. Icing pudding cupcake gingerbread toffee dessert. Pudding bear
-          claw muffin marshmallow muffin oat cake. Marshmallow shortbread wafer
-          marshmallow icing toffee. Candy canes caramels halvah chupa chups
-          macaroon gummi bears jelly-o sugar plum. Donut pudding donut bear claw
-          fruitcake marzipan powder bear claw ice cream. Lemon drops toffee
-          candy cake marshmallow.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="errors"> Errors</div>
@@ -361,27 +360,6 @@ const Documents = () => {
         <Typography>
           Gummi bears danish jelly beans tootsie roll carrot cake apple pie
           soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
-          cotton candy. Sesame snaps macaroon toffee dragée apple pie cotton
-          candy macaroon topping. Sweet roll croissant sesame snaps jelly-o
-          marshmallow cookie jelly-o. Toffee sweet sugar plum cookie cookie
-          jujubes danish macaroon. Cheesecake ice cream danish ice cream jelly-o
-          lemon drops candy canes apple pie. Chupa chups jelly-o sesame snaps
-          sweet roll halvah toffee. Cotton candy sweet roll pie sesame snaps
-          wafer. Topping marzipan brownie powder pie caramels halvah jujubes.
-          Shortbread caramels danish donut oat cake soufflé. Sugar plum gummies
-          chupa chups dragée candy pudding. Apple pie shortbread croissant
-          gummies cheesecake topping gingerbread carrot cake icing. Cotton candy
-          cookie icing apple pie cookie. Soufflé sesame snaps shortbread cookie
-          jujubes cookie. Sweet fruitcake dragée sweet roll cake. Marzipan
-          pudding jelly beans cake pastry. Gingerbread jelly beans caramels
-          pastry gummies. Sweet candy canes caramels candy canes muffin
-          liquorice cake cheesecake halvah. Brownie carrot cake dessert cake
-          icing. Sesame snaps tiramisu ice cream candy canes danish toffee
-          brownie lollipop cake. Pudding cake caramels candy canes cookie
-          biscuit shortbread. Caramels candy canes biscuit dessert chocolate
-          cake muffin gummi bears tootsie roll fruitcake. Liquorice sweet roll
-          dragée chocolate cake marzipan. Croissant chupa chups cupcake pudding
-          sugar plum sugar plum donut pastry cupcake.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
@@ -389,30 +367,6 @@ const Documents = () => {
         <Typography>
           Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
           canes. Apple pie sweet roll danish ice cream cake cake cake dessert
-          halvah. Jujubes carrot cake sweet lollipop sweet cake bonbon topping.
-          Topping cupcake icing jujubes macaroon. Biscuit powder jujubes wafer
-          tootsie roll chocolate cake. Oat cake liquorice cake croissant oat
-          cake chocolate fruitcake cheesecake. Lemon drops sweet marzipan ice
-          cream biscuit chocolate cake biscuit. Gummi bears sweet biscuit
-          gummies jelly-o toffee macaroon pie apple pie. Fruitcake chupa chups
-          fruitcake gingerbread oat cake lollipop lemon drops croissant bear
-          claw. Shortbread apple pie pudding macaroon cookie liquorice dessert.
-          Carrot cake cupcake sesame snaps cake macaroon sweet roll toffee
-          chocolate cake sesame snaps. Cake jelly-o sesame snaps jujubes
-          marzipan marzipan cheesecake. Topping tiramisu muffin jujubes
-          chocolate bar lemon drops caramels shortbread toffee. Lollipop cupcake
-          cotton candy croissant gingerbread. Soufflé jelly-o apple pie wafer
-          tiramisu marzipan. Cake tart jelly-o danish dragée muffin. Cookie
-          cookie bonbon chocolate sugar plum toffee icing. Brownie carrot cake
-          bonbon sesame snaps jujubes wafer brownie. Lollipop croissant
-          cheesecake gingerbread cheesecake soufflé tart chocolate fruitcake.
-          Dessert bear claw candy canes oat cake jujubes cake candy sweet chupa
-          chups. Icing pudding cupcake gingerbread toffee dessert. Pudding bear
-          claw muffin marshmallow muffin oat cake. Marshmallow shortbread wafer
-          marshmallow icing toffee. Candy canes caramels halvah chupa chups
-          macaroon gummi bears jelly-o sugar plum. Donut pudding donut bear claw
-          fruitcake marzipan powder bear claw ice cream. Lemon drops toffee
-          candy cake marshmallow.
         </Typography>
       </div>
       <h2>Playground - Json</h2>
