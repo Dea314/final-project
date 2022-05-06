@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import {
   Box,
@@ -21,9 +20,9 @@ import {
   optionsWeapon,
 } from "../Theme.js";
 
-// const label = { inputProps: { "aria-label": "controlled" } };
-const Form = () => {
+const Form = ({ setSearchQuery }) => {
   const [selected, setSelected] = useState({
+    name: "",
     optionsElement: [],
     optionsWeakness: [],
     optionsStrength: [],
@@ -48,13 +47,17 @@ const Form = () => {
       optionsWeapon.length > 0 &&
       selected.optionsWeapon.length === optionsWeapon.length,
   });
-  // const [selected, setSelected] = useState([]);
-  // const isAllSelected =
-  //   optionsElement.length > 0 && selected.length === optionsElement.length;
 
   const handleChange = (event) => {
     const value = event.target.value;
-    console.log("neki string");
+
+    if (event.target.name === "name") {
+      setSelected({
+        ...selected,
+        name: value,
+      });
+      return;
+    }
 
     if (event.target.name === "optionsElement") {
       if (value[value.length - 1] === "all") {
@@ -143,13 +146,17 @@ const Form = () => {
       return;
     }
   };
-  console.log("selected", selected);
-  console.log("isAllSelected", isAllSelected);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearchQuery(selected);
+  };
+
   return (
     <div className="wrapper-search">
       <Box
-        // onSubmit={handleSubmit}
         component="form"
+        onSubmit={handleSubmit}
         sx={{
           width: "100%",
           marginTop: "50px",
@@ -158,14 +165,14 @@ const Form = () => {
         }}
       >
         <TextField
-          name="searchQuery"
+          name="name"
           className="search-field"
           type="text"
           label="Name..."
           size="small"
+          onChange={handleChange}
           style={{ textDecoration: "none", margin: "1.5rem" }}
         />
-
         <FormControl
           className="formcontrol"
           sx={{
@@ -401,27 +408,27 @@ const Form = () => {
             ))}
           </Select>
         </FormControl>
+        <Button
+          className="find-one-character"
+          type="submit"
+          variant="contained"
+          size="large"
+          margin="normal"
+          style={{
+            textDecoration: "none",
+            margin: "1rem",
+            float: "right",
+            marginRight: "8rem",
+          }}
+          sx={{
+            gap: "1rem",
+            margin: "1rem",
+            display: "flex",
+          }}
+        >
+          TRY ME!
+        </Button>
       </Box>
-      <Button
-        className="find-one-character"
-        type="submit"
-        variant="contained"
-        size="large"
-        margin="normal"
-        style={{
-          textDecoration: "none",
-          margin: "1rem",
-          float: "right",
-          marginRight: "8rem",
-        }}
-        sx={{
-          gap: "1rem",
-          margin: "1rem",
-          display: "flex",
-        }}
-      >
-        TRY ME!
-      </Button>
     </div>
   );
 };
