@@ -10,10 +10,12 @@
 }
 
 .toolbar {
-  margin: 3rem;
+  margin: 2.5rem;
+  padding-left: 0.5rem;
 }
 li {
   list-style-type: none;
+  margin-left: 2rem;
 }
 li:hover {
   color: rgb(0, 38, 255);
@@ -31,7 +33,6 @@ li:hover {
   width: 15%;
 }
 
-
 .scroll_to_top {
   background-color: rgb(237, 219, 219);
   right: 40px;
@@ -46,4 +47,8 @@ li:hover {
   box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
   border: none;
   outline: none;
+}
+
+.url {
+  margin: 3rem;
 }

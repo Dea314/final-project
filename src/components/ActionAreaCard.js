@@ -23,7 +23,7 @@ const ActionAreaCard = ({ character }) => {
               borderColor: "grey.500",
               borderRadius: "5px",
               boxShadow: "0 2rem 6rem rgba(0, 0, 0, 0.1)",
-            }} // with thin border between pic and title?
+            }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

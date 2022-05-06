@@ -10,7 +10,7 @@ const Navbar = () => {
         <CssBaseline />
 
         <Toolbar className="toolbar" disableGutters>
-          <img className="main-logo" src={logo} alt="logo" width={250} />
+          <img className="main-logo" src={logo} alt="logo" width={270} />
           <NavLink
             to="/"
             variant="h2"
