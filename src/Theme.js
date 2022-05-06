@@ -206,7 +206,7 @@ const optionsResistance = [
   "wind",
 ];
 
-const optinonsWeapon = [
+const optionsWeapon = [
   "aereo",
   "aero",
   "arms shooting",
@@ -289,5 +289,5 @@ export {
   optionsStrength,
   optionsWeakness,
   optionsResistance,
-  optinonsWeapon,
+  optionsWeapon,
 };
