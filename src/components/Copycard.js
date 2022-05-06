@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import {
   CardContent,
@@ -10,17 +9,11 @@ import fflogo from "../img/fflogo.png";
 import "./Copycard.css";
 
 const Copycard = ({ character }) => {
-  //   const [isFlipped, setIsFlipped] = useState(false);
-
-  //   const handleClick = () => {
-  //     setIsFlipped((prevState) => ({ isFlipped: !prevState.isFlipped }));
-  //   };
-
   return (
     <div className="artboard">
       <div className="card">
         <div className="card__side card__side--back">
-          <Card sx={{ maxWidth: 350 }}>
+          <Card sx={{ maxWidth: 370 }}>
             <CardActionArea>
               <CardMedia
                 className="card-side back"
@@ -32,14 +25,14 @@ const Copycard = ({ character }) => {
                   border: 1,
                   borderColor: "grey.500",
                   borderRadius: "5px",
-                }} // with thin border between pic and title?
+                }}
               />
               <CardContent>
                 <Typography
                   gutterBottom
                   variant="h6"
                   component="div"
-                  fontSize={20}
+                  fontSize={18}
                 >
                   name: {character.name} <br />
                   location: {character.location.join(", ")} <br />
@@ -66,7 +59,8 @@ const Copycard = ({ character }) => {
                   border: 1,
                   borderColor: "grey.500",
                   borderRadius: "5px",
-                }} // with thin border between pic and title?
+                  margin: "0",
+                }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

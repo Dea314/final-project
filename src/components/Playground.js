@@ -54,16 +54,31 @@ const Playground = () => {
   return (
     <>
       <ToastContainer />
-      <div>Playground characters</div>
-      <h4>
+
+      <h4 className="url">
         URL: {process.env.REACT_APP_API_URL}
         {currentQuery && `?${currentQuery.toString()}`}
       </h4>
       <Form setSearchQuery={setSearchQuery} />
-      <Grid container>
+      <Grid
+        container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          height: "100%",
+        }}
+      >
         {playgroundCharacters.length
           ? playgroundCharacters.map((character) => (
-              <Grid item key={character._id}>
+              <Grid
+                item
+                key={character._id}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  height: "100%",
+                }}
+              >
                 <Copycard character={character} />
               </Grid>
             ))

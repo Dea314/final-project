@@ -171,7 +171,10 @@ const Form = ({ setSearchQuery }) => {
           label="Name..."
           size="small"
           onChange={handleChange}
-          style={{ textDecoration: "none", margin: "1.5rem" }}
+          style={{
+            textDecoration: "none",
+            margin: "1.5rem",
+          }}
         />
         <FormControl
           className="formcontrol"
@@ -418,7 +421,7 @@ const Form = ({ setSearchQuery }) => {
             textDecoration: "none",
             margin: "1rem",
             float: "right",
-            marginRight: "8rem",
+            marginRight: "4rem",
           }}
           sx={{
             gap: "1rem",
