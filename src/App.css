@@ -33,6 +33,17 @@ li:hover {
   width: 15%;
 }
 
+
+.routesURL {
+  background-color: rgb(255, 255, 255);
+  display: inline;
+  border: solid 3px rgb(152, 152, 152);
+  border-radius: 30px;
+  padding: 5px 60px 5px 60px;
+
+}
+
+
 .scroll_to_top {
   background-color: rgb(237, 219, 219);
   right: 40px;
