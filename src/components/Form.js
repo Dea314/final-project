@@ -18,50 +18,133 @@ import {
   optionsStrength,
   optionsWeakness,
   optionsResistance,
-  optinonsWeapon,
+  optionsWeapon,
 } from "../Theme.js";
 
 // const label = { inputProps: { "aria-label": "controlled" } };
 const Form = () => {
-  const [selected, setSelected] = useState([]);
-  const isAllSelected =
-    optionsElement.length > 0 && selected.length === optionsElement.length;
+  const [selected, setSelected] = useState({
+    optionsElement: [],
+    optionsWeakness: [],
+    optionsStrength: [],
+    optionsResistance: [],
+    optionsWeapon: [],
+  });
+
+  const [isAllSelected, setIsAllSelected] = useState({
+    optionsElement:
+      optionsElement.length > 0 &&
+      selected.optionsElement.length === optionsElement.length,
+    optionsWeakness:
+      optionsWeakness.length > 0 &&
+      selected.optionsWeakness.length === optionsWeakness.length,
+    optionsStrength:
+      optionsStrength.length > 0 &&
+      selected.optionsStrength.length === optionsStrength.length,
+    optionsResistance:
+      optionsResistance.length > 0 &&
+      selected.optionsResistance.length === optionsResistance.length,
+    optionsWeapon:
+      optionsWeapon.length > 0 &&
+      selected.optionsWeapon.length === optionsWeapon.length,
+  });
+  // const [selected, setSelected] = useState([]);
+  // const isAllSelected =
+  //   optionsElement.length > 0 && selected.length === optionsElement.length;
 
   const handleChange = (event) => {
     const value = event.target.value;
-    if (value[value.length - 1] === "all") {
-      setSelected(
-        selected.length === optionsElement.length ? [] : optionsElement
-      );
-      return;
-    }
-    if (value[value.length - 1] === "all") {
-      setSelected(
-        selected.length === optionsWeakness.length ? [] : optionsWeakness
-      );
-      return;
-    }
-    if (value[value.length - 1] === "all") {
-      setSelected(
-        selected.length === optionsStrength.length ? [] : optionsStrength
-      );
-      return;
-    }
-    if (value[value.length - 1] === "all") {
-      setSelected(
-        selected.length === optionsResistance.length ? [] : optionsResistance
-      );
-      return;
-    }
-    if (value[value.length - 1] === "all") {
-      setSelected(
-        selected.length === optinonsWeapon.length ? [] : optinonsWeapon
-      );
-      return;
-    }
+    console.log("neki string");
 
-    setSelected(value);
+    if (event.target.name === "optionsElement") {
+      if (value[value.length - 1] === "all") {
+        setSelected({
+          ...selected,
+          optionsElement:
+            selected.optionsElement.length === optionsElement.length
+              ? []
+              : optionsElement,
+        });
+        return;
+      }
+
+      setSelected({
+        ...selected,
+        optionsElement: value,
+      });
+      return;
+    }
+    if (event.target.name === "optionsWeakness") {
+      if (value[value.length - 1] === "all") {
+        setSelected({
+          ...selected,
+          optionsWeakness:
+            selected.optionsWeakness.length === optionsWeakness.length
+              ? []
+              : optionsWeakness,
+        });
+        return;
+      }
+      setSelected({
+        ...selected,
+        optionsWeakness: value,
+      });
+      return;
+    }
+    if (event.target.name === "optionsStrength") {
+      if (value[value.length - 1] === "all") {
+        setSelected({
+          ...selected,
+          optionsStrength:
+            selected.optionsStrength.length === optionsStrength.length
+              ? []
+              : optionsStrength,
+        });
+        return;
+      }
+      setSelected({
+        ...selected,
+        optionsStrength: value,
+      });
+      return;
+    }
+    if (event.target.name === "optionsResistance") {
+      if (value[value.length - 1] === "all") {
+        setSelected({
+          ...selected,
+          optionsResistance:
+            selected.optionsResistance.length === optionsResistance.length
+              ? []
+              : optionsResistance,
+        });
+        return;
+      }
+      setSelected({
+        ...selected,
+        optionsResistance: value,
+      });
+      return;
+    }
+    if (event.target.name === "optionsWeapon") {
+      if (value[value.length - 1] === "all") {
+        setSelected({
+          ...selected,
+          optionsWeapon:
+            selected.optionsWeapon.length === optionsWeapon.length
+              ? []
+              : optionsWeapon,
+        });
+        return;
+      }
+      setSelected({
+        ...selected,
+        optionsWeapon: value,
+      });
+      return;
+    }
   };
+  console.log("selected", selected);
+  console.log("isAllSelected", isAllSelected);
   return (
     <div className="wrapper-search">
       <Box
@@ -70,8 +153,6 @@ const Form = () => {
         sx={{
           width: "100%",
           marginTop: "50px",
-          // marginRight: "10%",
-          // justifyContent: "end",
           display: "flex",
           flexDirection: "row",
         }}
@@ -99,39 +180,33 @@ const Form = () => {
             Select elements
           </InputLabel>
           <Select
+            name="optionsElement"
             labelId="mutiple-select-label"
             multiple
-            value={selected}
+            value={selected.optionsElement}
             onChange={handleChange}
             renderValue={(selected) => selected.join(", ")}
             MenuProps={MenuProps}
           >
-            <MenuItem
-              value="all"
-              // classes={{
-              // root: isAllSelected ? classes.selectedAll : "",
-              // }}
-            >
+            <MenuItem value="all">
               <ListItemIcon>
                 <Checkbox
-                  // classes={{ indeterminate: classes.indeterminateColor }}
                   color="default"
-                  checked={isAllSelected}
+                  checked={isAllSelected.optionsElement}
                   indeterminate={
-                    selected.length > 0 &&
-                    selected.length < optionsElement.length
+                    selected.optionsElement.length > 0 &&
+                    selected.optionsElement.length < optionsElement.length
                   }
                 />
               </ListItemIcon>
-              <ListItemText
-                // classes={{ primary: classes.selectAllText }}
-                primary="Select All"
-              />
+              <ListItemText primary="Select All" />
             </MenuItem>
             {optionsElement.map((option) => (
-              <MenuItem key={option} value={option}>
+              <MenuItem key={"optionsElement" + option} value={option}>
                 <ListItemIcon>
-                  <Checkbox checked={selected.indexOf(option) > -1} />
+                  <Checkbox
+                    checked={selected.optionsElement.indexOf(option) > -1}
+                  />
                 </ListItemIcon>
                 <ListItemText primary={option} />
               </MenuItem>
@@ -152,39 +227,33 @@ const Form = () => {
             Select weakness
           </InputLabel>
           <Select
+            name="optionsWeakness"
             labelId="mutiple-select-label"
             multiple
-            value={selected}
+            value={selected.optionsWeakness}
             onChange={handleChange}
             renderValue={(selected) => selected.join(", ")}
             MenuProps={MenuProps}
           >
-            <MenuItem
-              value="all"
-              // classes={{
-              // root: isAllSelected ? classes.selectedAll : "",
-              // }}
-            >
+            <MenuItem value="all">
               <ListItemIcon>
                 <Checkbox
-                  // classes={{ indeterminate: classes.indeterminateColor }}
                   color="default"
-                  checked={isAllSelected}
+                  checked={isAllSelected.optionsWeakness}
                   indeterminate={
-                    selected.length > 0 &&
-                    selected.length < optionsWeakness.length
+                    selected.optionsWeakness.length > 0 &&
+                    selected.optionsWeakness.length < optionsWeakness.length
                   }
                 />
               </ListItemIcon>
-              <ListItemText
-                // classes={{ primary: classes.selectAllText }}
-                primary="Select All"
-              />
+              <ListItemText primary="Select All" />
             </MenuItem>
             {optionsWeakness.map((option) => (
-              <MenuItem key={option} value={option}>
+              <MenuItem key={"optionsWeakness" + option} value={option}>
                 <ListItemIcon>
-                  <Checkbox checked={selected.indexOf(option) > -1} />
+                  <Checkbox
+                    checked={selected.optionsWeakness.indexOf(option) > -1}
+                  />
                 </ListItemIcon>
                 <ListItemText primary={option} />
               </MenuItem>
@@ -205,39 +274,33 @@ const Form = () => {
             Select strength
           </InputLabel>
           <Select
+            name="optionsStrength"
             labelId="mutiple-select-label"
             multiple
-            value={selected}
+            value={selected.optionsStrength}
             onChange={handleChange}
             renderValue={(selected) => selected.join(", ")}
             MenuProps={MenuProps}
           >
-            <MenuItem
-              value="all"
-              // classes={{
-              // root: isAllSelected ? classes.selectedAll : "",
-              // }}
-            >
+            <MenuItem value="all">
               <ListItemIcon>
                 <Checkbox
-                  // classes={{ indeterminate: classes.indeterminateColor }}
                   color="default"
-                  checked={isAllSelected}
+                  checked={isAllSelected.optionsStrength}
                   indeterminate={
-                    selected.length > 0 &&
-                    selected.length < optionsStrength.length
+                    selected.optionsStrength.length > 0 &&
+                    selected.optionsStrength.length < optionsStrength.length
                   }
                 />
               </ListItemIcon>
-              <ListItemText
-                // classes={{ primary: classes.selectAllText }}
-                primary="Select All"
-              />
+              <ListItemText primary="Select All" />
             </MenuItem>
             {optionsStrength.map((option) => (
-              <MenuItem key={option} value={option}>
+              <MenuItem key={"optionsStrength" + option} value={option}>
                 <ListItemIcon>
-                  <Checkbox checked={selected.indexOf(option) > -1} />
+                  <Checkbox
+                    checked={selected.optionsStrength.indexOf(option) > -1}
+                  />
                 </ListItemIcon>
                 <ListItemText primary={option} />
               </MenuItem>
@@ -258,39 +321,33 @@ const Form = () => {
             Select resistance
           </InputLabel>
           <Select
+            name="optionsResistance"
             labelId="mutiple-select-label"
             multiple
-            value={selected}
+            value={selected.optionsResistance}
             onChange={handleChange}
             renderValue={(selected) => selected.join(", ")}
             MenuProps={MenuProps}
           >
-            <MenuItem
-              value="all"
-              // classes={{
-              // root: isAllSelected ? classes.selectedAll : "",
-              // }}
-            >
+            <MenuItem value="all">
               <ListItemIcon>
                 <Checkbox
-                  // classes={{ indeterminate: classes.indeterminateColor }}
                   color="default"
-                  checked={isAllSelected}
+                  checked={isAllSelected.optionsResistance}
                   indeterminate={
-                    selected.length > 0 &&
-                    selected.length < optionsResistance.length
+                    selected.optionsResistance.length > 0 &&
+                    selected.optionsResistance.length < optionsResistance.length
                   }
                 />
               </ListItemIcon>
-              <ListItemText
-                // classes={{ primary: classes.selectAllText }}
-                primary="Select All"
-              />
+              <ListItemText primary="Select All" />
             </MenuItem>
             {optionsResistance.map((option) => (
-              <MenuItem key={option} value={option}>
+              <MenuItem key={"optionsResistance" + option} value={option}>
                 <ListItemIcon>
-                  <Checkbox checked={selected.indexOf(option) > -1} />
+                  <Checkbox
+                    checked={selected.optionsResistance.indexOf(option) > -1}
+                  />
                 </ListItemIcon>
                 <ListItemText primary={option} />
               </MenuItem>
@@ -311,97 +368,39 @@ const Form = () => {
             Select weapon
           </InputLabel>
           <Select
+            name="optionsWeapon"
             labelId="mutiple-select-label"
             multiple
-            value={selected}
+            value={selected.optionsWeapon}
             onChange={handleChange}
             renderValue={(selected) => selected.join(", ")}
             MenuProps={MenuProps}
           >
-            <MenuItem
-              value="all"
-              // classes={{
-              // root: isAllSelected ? classes.selectedAll : "",
-              // }}
-            >
+            <MenuItem value="all">
               <ListItemIcon>
                 <Checkbox
-                  // classes={{ indeterminate: classes.indeterminateColor }}
                   color="default"
-                  checked={isAllSelected}
+                  checked={isAllSelected.optionsWeapon}
                   indeterminate={
-                    selected.length > 0 &&
-                    selected.length < optinonsWeapon.length
+                    selected.optionsWeapon.length > 0 &&
+                    selected.optionsWeapon.length < optionsWeapon.length
                   }
                 />
               </ListItemIcon>
-              <ListItemText
-                // classes={{ primary: classes.selectAllText }}
-                primary="Select All"
-              />
+              <ListItemText primary="Select All" />
             </MenuItem>
-            {optinonsWeapon.map((option) => (
-              <MenuItem key={option} value={option}>
+            {optionsWeapon.map((option) => (
+              <MenuItem key={"optionsWeapon" + option} value={option}>
                 <ListItemIcon>
-                  <Checkbox checked={selected.indexOf(option) > -1} />
+                  <Checkbox
+                    checked={selected.optionsWeapon.indexOf(option) > -1}
+                  />
                 </ListItemIcon>
                 <ListItemText primary={option} />
               </MenuItem>
             ))}
           </Select>
         </FormControl>
-
-        {/* <FormLabel
-            style={{
-              textDecoration: "none",
-              margin: "1rem",
-            }}
-          >
-            Select...
-          </FormLabel> */}
-        {/* <FormControl
-            control={
-              <Checkbox
-                classes={{ indeterminate: classes.indeterminateColor }}
-                checked={isAllSelected}
-                indeterminate={
-                  selected.length > 0 && selected.length < options.length
-                }
-              />
-            }
-          ></FormControl> */}
-        {/* <FormControl
-            control={
-              <Checkbox
-                // checked={strength}
-                name="strength"
-                defaultChecked={false}
-                color="default"
-              />
-            }
-            label="Strength"
-          ></FormControl>
-          <FormControl
-            control={
-              <Checkbox
-                // checked={weakness}
-                name="weakness"
-                defaultChecked={false}
-                color="default"
-              />
-            }
-            label="Weakness"
-          ></FormControl>
-         */}
-        {/* <Button
-          className="find-all-characters"
-          type="submit"
-          variant="contained"
-          size="medium"
-          style={{ textDecoration: "none", margin: "1rem" }}
-        >
-          Get all characters
-        </Button> */}
       </Box>
       <Button
         className="find-one-character"

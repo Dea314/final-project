@@ -14,7 +14,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             variant="h2"
-            noWrap
+            // nowrap
             component="div"
             sx={{ ml: 2, display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavLink
             to="/playground"
             variant="h5"
-            noWrap
+            // noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -36,7 +36,7 @@ const Navbar = () => {
           <NavLink
             to="/documents"
             variant="h5"
-            noWrap
+            // noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -47,7 +47,7 @@ const Navbar = () => {
           <NavLink
             to="/about"
             variant="h5"
-            noWrap
+            // noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
