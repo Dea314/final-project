@@ -6,6 +6,8 @@ import Playground from "./components/Playground";
 import About from "./components/About";
 import Landing from "./components/Landing";
 import Home from "./components/Home";
+import { randomArray } from "./helpers/helpers.js";
+
 import "./App.css";
 import { Box } from "@mui/material";
 import ScrollToTop from "react-scroll-to-top";
@@ -23,10 +25,7 @@ const App = () => {
         setResponse(randomArray(characters, 5));
 
         // setPlaygroundChracters();
-        //toast.success("Success! Check your results");
-      } catch (err) {
-        // toast.error(err.response?.data.error || err.message);
-      }
+      } catch (err) {}
     };
     getAllCharacters();
   }, []);
@@ -43,7 +42,7 @@ const App = () => {
           </Route>
         </Routes>
       </Box>
-      <ScrollToTop smooth color="#6f00ff" className="scroll_to_top" />
+      <ScrollToTop smooth color="#b0bec5" className="scroll_to_top" />
     </div>
   );
 };

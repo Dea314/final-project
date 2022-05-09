@@ -40,3 +40,9 @@
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
+
+.artboard {
+  height: 750px;
+  overflow: auto;
+  margin-bottom: 100px;
+}

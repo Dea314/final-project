@@ -1,5 +1,5 @@
 import React from "react";
-import { randomArray } from "../helpers/helpers";
+//import { randomArray } from "./helpers/helpers.js";
 import ActionAreaCard from "./ActionAreaCard";
 
 const Home = ({ response }) => {
@@ -9,9 +9,9 @@ const Home = ({ response }) => {
   return (
     <>
       <div className="home">
-        {/* {homeArr?.map((item) => {
+        {response.map((item) => {
           return <ActionAreaCard character={item} />;
-        })} */}
+        })}
       </div>
     </>
   );

@@ -17,10 +17,17 @@ li {
   list-style-type: none;
   margin-left: 2rem;
   margin-top: 0.2rem;
+  padding-right: 2rem;
+  width: 20rem;
 }
 li:hover {
   color: rgb(0, 38, 255);
   cursor: pointer;
+}
+
+ul {
+  margin-top: 6rem;
+  border-right: solid 2px rgb(0, 38, 255);
 }
 
 .title {
@@ -33,6 +40,10 @@ li:hover {
 
 .wrapper-text {
   margin: 5rem;
+}
+
+.wrapper-all {
+  display: flex;
 }
 
 .formcontrol {
@@ -48,7 +59,7 @@ li:hover {
 }
 
 .scroll_to_top {
-  background-color: #607d8b;
+  background-color: #5279ec;
   right: 40px;
   bottom: 180px;
   position: fixed;
