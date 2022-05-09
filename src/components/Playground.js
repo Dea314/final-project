@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Form from "./Form";
 import Copycard from "./Copycard";
 import "react-toastify/dist/ReactToastify.css";
+import CopyButton from "./CopyButton";
 
 const Playground = () => {
   const [searchQuery, setSearchQuery] = useState(null);
@@ -28,10 +29,10 @@ const Playground = () => {
           );
         }
         if (searchQuery?.optionsStrength?.length) {
-          urlQuery.append("weakness", searchQuery.optionsStrength.join(","));
+          urlQuery.append("strength", searchQuery.optionsStrength.join(","));
         }
         if (searchQuery?.optionsWeakness?.length) {
-          urlQuery.append("elements", searchQuery.optionsWeakness.join(","));
+          urlQuery.append("weakness", searchQuery.optionsWeakness.join(","));
         }
         if (searchQuery?.optionsWeapon?.length) {
           urlQuery.append("weapon", searchQuery.optionsWeapon.join(","));
@@ -54,11 +55,21 @@ const Playground = () => {
   return (
     <>
       <ToastContainer />
-
-      <h4 className="url">
-        URL: {process.env.REACT_APP_API_URL}
-        {currentQuery && `?${currentQuery.toString()}`}
-      </h4>
+      <div>
+        <h4 className="url">
+          URL:
+          {currentQuery
+            ? `${process.env.REACT_APP_API_URL}?${currentQuery.toString()}`
+            : process.env.REACT_APP_API_URL}
+        </h4>
+        <CopyButton
+          textToCopy={
+            currentQuery
+              ? `${process.env.REACT_APP_API_URL}?${currentQuery.toString()}`
+              : process.env.REACT_APP_API_URL
+          }
+        />
+      </div>
       <Form setSearchQuery={setSearchQuery} />
       <div className="body-for-cards">
         <Grid
