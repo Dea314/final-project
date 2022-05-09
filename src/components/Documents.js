@@ -2,10 +2,11 @@ import { Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import  CustomizedTables  from "./Attributes";
 
+
 const Documents = () => {
   return (
     <div className="wrapper-all">
-      <div>
+      <div className="vertical-bar">
         <ul>
           <li>
             <Link
@@ -258,10 +259,17 @@ const Documents = () => {
          GET the data.
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?name=chimera   
+         /playground?name=<span className="end-string">chimera </span>  
+        </Typography>
+
+        <Typography>
+
         </Typography>
 
 
+
+
+        
         <Typography variant="h4" align="center" className="title">
           <div id="by-element">Get characters by key elements</div>
         </Typography>
@@ -271,7 +279,7 @@ const Documents = () => {
         comma (,) in between to find the characters with the chosen elements.
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?elements=fire,water,holy  
+         /playground?elements=<span className="end-string">fire,water,holy </span> 
         </Typography>
         
 
@@ -285,7 +293,7 @@ const Documents = () => {
          characters that has both inputs will be displayed.        
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?strength=attack blockers,size  
+         /playground?strength=<span className="end-string">attack blockers,size</span>  
         </Typography>
 
 
@@ -298,7 +306,7 @@ const Documents = () => {
         characters that has all inputs will be displayed.        
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?weakness=slow movement,low hp
+         /playground?weakness=<span className="end-string">slow movement,low hp</span>
         </Typography>
 
 
@@ -311,7 +319,7 @@ const Documents = () => {
         characters that has all inputs will be displayed.        
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?resistance=poison,confuse,death
+         /playground?resistance=<span className="end-string">poison,confuse,death</span>
         </Typography>
 
 
@@ -324,7 +332,7 @@ const Documents = () => {
         characters that has all inputs will be displayed.        
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?weapon=confuse,aereo,meteor
+         /playground?weapon=<span className="end-string">confuse,aereo,meteor</span>
         </Typography>
 
 
@@ -337,7 +345,7 @@ const Documents = () => {
         the characters that has been in all places mentioned will be displayed.        
         </Typography>
         <Typography align="center" className="routesURL">
-        /playground?location=Palamecia,Pandaemonium
+        /playground?location=<span className="end-string">Palamecia,Pandaemonium</span>
         </Typography>
 
 
@@ -352,7 +360,7 @@ const Documents = () => {
           <div id="location"> Location</div>
         </Typography>
         <Typography>
-          Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
+          Biscuit 
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="errors"> Errors</div>
