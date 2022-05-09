@@ -16,10 +16,18 @@
 li {
   list-style-type: none;
   margin-left: 2rem;
+  margin-top: 0.2rem;
+  padding-right: 2rem;
+  width: 20rem;
 }
 li:hover {
   color: rgb(0, 38, 255);
   cursor: pointer;
+}
+
+ul {
+  margin-top: 6rem;
+  border-right: solid 2px rgb(0, 38, 255);
 }
 
 .title {
@@ -29,10 +37,18 @@ li:hover {
 .wrapper-search {
   margin: 2rem;
 }
+
+.wrapper-text {
+  margin: 5rem;
+}
+
+.wrapper-all {
+  display: flex;
+}
+
 .formcontrol {
   width: 15%;
 }
-
 
 .routesURL {
   background-color: rgb(255, 255, 255);
@@ -40,12 +56,10 @@ li:hover {
   border: solid 3px rgb(152, 152, 152);
   border-radius: 30px;
   padding: 5px 60px 5px 60px;
-
 }
 
-
 .scroll_to_top {
-  background-color: rgb(237, 219, 219);
+  background-color: #5279ec;
   right: 40px;
   bottom: 180px;
   position: fixed;
@@ -62,4 +76,9 @@ li:hover {
 
 .url {
   margin: 3rem;
+}
+
+.body-for-cards {
+  display: flex;
+  justify-content: center;
 }

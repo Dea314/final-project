@@ -5,8 +5,8 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import fflogo from "../img/fflogo.png";
 import "./Copycard.css";
+const assets = require("../assets.json");
 
 const Copycard = ({ character }) => {
   return (
@@ -19,12 +19,13 @@ const Copycard = ({ character }) => {
                 className="card-side back"
                 component="img"
                 height="350"
-                image={fflogo}
-                alt={fflogo}
+                image={character.img_url}
+                alt={character.name}
                 sx={{
                   border: 1,
                   borderColor: "grey.500",
                   borderRadius: "5px",
+                  margin: "0",
                 }}
               />
               <CardContent>
@@ -68,6 +69,19 @@ const Copycard = ({ character }) => {
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {character.description}
+                  <div>
+                    {character.elements.map((element) => {
+                      return (
+                        <>
+                          <img
+                            src={assets.elements[element.toLowerCase()]}
+                            alt={element}
+                            height="25"
+                          />
+                        </>
+                      );
+                    })}
+                  </div>
                 </Typography>
               </CardContent>
             </CardActionArea>

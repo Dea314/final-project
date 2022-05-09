@@ -1,15 +1,35 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import Documents from "./components/Documents";
 import Playground from "./components/Playground";
 import About from "./components/About";
 import Landing from "./components/Landing";
 import Home from "./components/Home";
+import { randomArray } from "./helpers/helpers.js";
+
 import "./App.css";
 import { Box } from "@mui/material";
 import ScrollToTop from "react-scroll-to-top";
 const response = require("./response.json");
 
 const App = () => {
+  const [response, setResponse] = useState([]);
+  useEffect(() => {
+    const getAllCharacters = async () => {
+      try {
+        const {
+          data: { characters },
+        } = await axios.get(process.env.REACT_APP_API_URL);
+
+        setResponse(randomArray(characters, 5));
+
+        // setPlaygroundChracters();
+      } catch (err) {}
+    };
+    getAllCharacters();
+  }, []);
+
   return (
     <div className="bar">
       <Box className="main-box">
@@ -22,7 +42,7 @@ const App = () => {
           </Route>
         </Routes>
       </Box>
-      <ScrollToTop smooth color="#6f00ff" className="scroll_to_top" />
+      <ScrollToTop smooth color="#b0bec5" className="scroll_to_top" />
     </div>
   );
 };
