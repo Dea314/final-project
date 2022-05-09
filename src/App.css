@@ -35,7 +35,7 @@ ul {
 }
 
 .wrapper-search {
-  margin: 2rem;
+  margin: 20rem;
 }
 
 .wrapper-text {
@@ -78,6 +78,9 @@ ul {
   margin: 3rem;
 }
 
+.end-string {
+  color: rgba(116, 116, 116, 0.467);
+}
 .body-for-cards {
   display: flex;
   justify-content: center;
