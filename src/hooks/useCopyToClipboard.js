@@ -1,23 +1,5 @@
 import { useState } from "react";
 import copy from "copy-to-clipboard";
-<<<<<<< HEAD
-
-
-function useCopyToClipboard=()=> {
-  const [ copied, setCopied] = useState(false)
-
-  const handleCopy = (textToCopy) =>{
-copy(textToCopy.toString())
-setCopied(true)
-  }
-  return (
-  [copied, handleCopy]
-  
-  )
-}
-
-export default useCopyToClipboard;
-=======
 import { toast } from "react-toastify";
 
 function useCopyToClipboard() {
@@ -32,4 +14,3 @@ function useCopyToClipboard() {
 }
 
 export default useCopyToClipboard;
->>>>>>> origin/main
