@@ -258,12 +258,6 @@ const Documents = () => {
         <Typography align="center" className="routesURL">
          /playground?name=<span className="end-string">chimera </span>  
         </Typography>
-
-        <Typography>
-
-        </Typography>
-
-
         <Typography variant="h4" align="center" className="title">
           <div id="by-element">Get characters by key elements</div>
         </Typography>
@@ -274,10 +268,7 @@ const Documents = () => {
           elements.
         </Typography>
         <Typography align="center" className="routesURL">
-
-         /playground?elements=<span className="end-string">fire,water,holy </span> 
-
-
+         /playground?elements= <span className="end-string">fire,water,holy </span> 
         </Typography>
 
         <Typography variant="h4" align="center" className="title">
@@ -289,6 +280,7 @@ const Documents = () => {
           both inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
+
          /playground?strength=<span className="end-string">attack blockers,size</span>  
         </Typography>
 
@@ -314,6 +306,7 @@ const Documents = () => {
           that has all inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
+
          /playground?resistance=<span className="end-string">poison,confuse,death</span>
         </Typography>
 
@@ -330,6 +323,7 @@ const Documents = () => {
          /playground?weapon=<span className="end-string">confuse,aereo,meteor</span>
         </Typography>
 
+
         <Typography variant="h4" align="center" className="title">
           <div id="by-location">Get characters by location</div>
         </Typography>
@@ -339,6 +333,7 @@ const Documents = () => {
           characters that has been in all places mentioned will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
+
         /playground?location=<span className="end-string">Palamecia,Pandaemonium</span>
         </Typography>
 
