@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Form from "./Form";
 import Copycard from "./Copycard";
 import "react-toastify/dist/ReactToastify.css";
+import CopyButton from "./CopyButton";
 
 const Playground = () => {
   const [searchQuery, setSearchQuery] = useState(null);
@@ -54,11 +55,15 @@ const Playground = () => {
   return (
     <>
       <ToastContainer />
-
-      <h4 className="url">
-        URL: {process.env.REACT_APP_API_URL}
-        {currentQuery && `?${currentQuery.toString()}`}
-      </h4>
+      <div>
+        <h4 className="url">
+          <textarea>
+            URL: {process.env.REACT_APP_API_URL}
+            {/* {currentQuery && `?${currentQuery.toString()}`} */}
+          </textarea>
+        </h4>
+        <CopyButton textToCopy {currentQuery && `?${currentQuery.toString()}`} />
+      </div>
       <Form setSearchQuery={setSearchQuery} />
       <div className="body-for-cards">
         <Grid

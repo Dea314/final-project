@@ -16,10 +16,18 @@
 li {
   list-style-type: none;
   margin-left: 2rem;
+  margin-top: 0.2rem;
+  padding-right: 2rem;
+  width: 20rem;
 }
 li:hover {
   color: rgb(0, 38, 255);
   cursor: pointer;
+}
+
+ul {
+  margin-top: 6rem;
+  border-right: solid 2px rgb(0, 38, 255);
 }
 
 .title {
@@ -29,6 +37,15 @@ li:hover {
 .wrapper-search {
   margin: 20rem;
 }
+
+.wrapper-text {
+  margin: 5rem;
+}
+
+.wrapper-all {
+  display: flex;
+}
+
 .formcontrol {
   width: 15%;
 }
@@ -42,7 +59,7 @@ li:hover {
 }
 
 .scroll_to_top {
-  background-color: rgb(237, 219, 219);
+  background-color: #5279ec;
   right: 40px;
   bottom: 180px;
   position: fixed;
@@ -61,6 +78,11 @@ li:hover {
   margin: 3rem;
 }
 
+
 .end-string {
   color: rgba(116, 116, 116, 0.467);
+}
+.body-for-cards {
+  display: flex;
+  justify-content: center;
 }
