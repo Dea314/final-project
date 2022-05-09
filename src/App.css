@@ -16,6 +16,7 @@
 li {
   list-style-type: none;
   margin-left: 2rem;
+  margin-top: 0.2rem;
 }
 li:hover {
   color: rgb(0, 38, 255);
@@ -29,10 +30,14 @@ li:hover {
 .wrapper-search {
   margin: 2rem;
 }
+
+.wrapper-text {
+  margin: 5rem;
+}
+
 .formcontrol {
   width: 15%;
 }
-
 
 .routesURL {
   background-color: rgb(255, 255, 255);
@@ -40,12 +45,10 @@ li:hover {
   border: solid 3px rgb(152, 152, 152);
   border-radius: 30px;
   padding: 5px 60px 5px 60px;
-
 }
 
-
 .scroll_to_top {
-  background-color: rgb(237, 219, 219);
+  background-color: #607d8b;
   right: 40px;
   bottom: 180px;
   position: fixed;
@@ -62,4 +65,9 @@ li:hover {
 
 .url {
   margin: 3rem;
+}
+
+.body-for-cards {
+  display: flex;
+  justify-content: center;
 }

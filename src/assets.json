@@ -9,8 +9,16 @@
     "wind": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fwind.png?alt=media&token=ed29d37b-d645-4637-a161-698cd8a18e61",
     "earth": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fearth.png?alt=media&token=c605c9e6-cec2-4581-a799-c2a93ed0321a",
     "clay": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fclay-brick.png?alt=media&token=4d8747d4-8be3-458f-a786-2bb22cce7e98",
-    "rock": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Frock.png?alt=media&token=144710ff-963c-4ecb-a718-d81e719cf255",
+    "rock": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Frock.png?alt=media&token=baabf806-295b-4f9a-9e25-69ae357b3d01",
     "air": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fair-zigzag.png?alt=media&token=997959d3-31ea-4027-9617-cacf099e8292",
-    "dark": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fbat.png?alt=media&token=7fe774d5-eaf6-48cb-8122-a3c176bd60f4"
+    "dark": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fbat.png?alt=media&token=7fe774d5-eaf6-48cb-8122-a3c176bd60f4",
+    "death": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fdeath.png?alt=media&token=e41b561f-4902-4e8f-8808-08bf4e478549",
+    "light": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Flight.png?alt=media&token=21fda9df-eb8f-4b25-9838-ee9949eec1d9",
+    "lightning": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Flightning.png?alt=media&token=ae03ef64-8a74-4539-b5a0-45f92658f67f",
+    "magical": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fmagical.png?alt=media&token=d274976c-34bd-4d56-b10f-af012c09f906",
+    "metal": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fmetal.png?alt=media&token=beaa6795-c201-4ac1-8bca-335d867fd454",
+    "oil": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Foil.png?alt=media&token=82d5d7c0-c2f1-488e-a308-cd0ae9e79d23",
+    "physical": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fphysical.png?alt=media&token=4dcdd175-0971-43bd-9d6b-6e552a68c00b",
+    "stone": "https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Felements%2Fstone.png?alt=media&token=6b20ad4f-3b0f-49d0-b22e-50c374e4d895"
   }
 }

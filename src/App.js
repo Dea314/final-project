@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import Documents from "./components/Documents";
 import Playground from "./components/Playground";
@@ -10,6 +12,25 @@ import ScrollToTop from "react-scroll-to-top";
 const response = require("./response.json");
 
 const App = () => {
+  const [response, setResponse] = useState([]);
+  useEffect(() => {
+    const getAllCharacters = async () => {
+      try {
+        const {
+          data: { characters },
+        } = await axios.get(process.env.REACT_APP_API_URL);
+
+        setResponse(randomArray(characters, 5));
+
+        // setPlaygroundChracters();
+        //toast.success("Success! Check your results");
+      } catch (err) {
+        // toast.error(err.response?.data.error || err.message);
+      }
+    };
+    getAllCharacters();
+  }, []);
+
   return (
     <div className="bar">
       <Box className="main-box">
