@@ -89,3 +89,11 @@ ul {
 .navlink:active {
   color: white;
 }
+
+.wrapper-about {
+  display: flex;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3rem;
+}
