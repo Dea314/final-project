@@ -159,7 +159,6 @@ const Form = ({ setSearchQuery }) => {
         onSubmit={handleSubmit}
         sx={{
           width: "100%",
-          marginTop: "50px",
           display: "flex",
           flexDirection: "row",
         }}
@@ -173,7 +172,8 @@ const Form = ({ setSearchQuery }) => {
           onChange={handleChange}
           style={{
             textDecoration: "none",
-            margin: "1.5rem",
+            marginTop: "2rem",
+            marginLeft: "1rem",
           }}
         />
         <FormControl
@@ -226,7 +226,6 @@ const Form = ({ setSearchQuery }) => {
         <FormControl
           className="formcontrol"
           sx={{
-            gap: "5rem",
             margin: "1rem",
           }}
         >
@@ -415,13 +414,14 @@ const Form = ({ setSearchQuery }) => {
           className="find-one-character"
           type="submit"
           variant="contained"
-          size="large"
+          size="medium"
           margin="normal"
           style={{
             textDecoration: "none",
             margin: "1rem",
             float: "right",
-            marginRight: "4rem",
+            marginRight: "3rem",
+            width: "10%",
           }}
           sx={{
             gap: "1rem",

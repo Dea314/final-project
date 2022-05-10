@@ -26,7 +26,7 @@ const ActionAreaCard = ({ character }) => {
             }}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h5">
               {character.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">

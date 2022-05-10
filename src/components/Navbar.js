@@ -12,44 +12,40 @@ const Navbar = () => {
         <Toolbar className="toolbar" disableGutters>
           <img className="main-logo" src={logo} alt="logo" width={270} />
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/"
-            variant="h2"
-            // nowrap
-            component="div"
-            sx={{ ml: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Home
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/playground"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Playground
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/documents"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Documents
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/about"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             About

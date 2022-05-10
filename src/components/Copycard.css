@@ -22,16 +22,8 @@
   /* The image is overflowing the parent. */
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
-/* .card__side--front {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(30, 11, 54, 0.65),
-      rgba(202, 55, 130, 0.7)
-    ),
-    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
-} */
+
 .card__side--back {
-  /* background-color: #fff; */
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
