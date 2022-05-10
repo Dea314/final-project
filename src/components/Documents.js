@@ -12,6 +12,12 @@ import {
 import {
   baseURLSnippets,
   getSingleCharacterByName,
+  getCharactersByElement,
+  getCharactersByStrength,
+  getCharactersByWeakness,
+  getCharactersByResistance,
+  getCharactersByWeapon,
+  getCharactersByLocation,
 } from "../helpers/codeSnippets";
 
 const Documents = () => {
@@ -166,17 +172,6 @@ const Documents = () => {
           </li>
           <li>
             <Link
-              to="other-anguages"
-              spy={true}
-              smooth={true}
-              style={{ textDecoration: "none" }}
-            >
-              Other Languages
-            </Link>
-          </li>
-
-          <li>
-            <Link
               to="errors"
               spy={true}
               smooth={true}
@@ -202,19 +197,24 @@ const Documents = () => {
 
         <Typography variant="h4" align="center" className="title">
           <div id="introduction">Introduction</div>
-          SELECT LANGUAGE:
-          <select onChange={(e) => setLanguage(e.target.value)}>
-            <option value="javascript">Javascript</option>
-            <option value="curl">cURL</option>
-            <option value="php">PHP</option>
-          </select>
-          SELECT THEME:
-          <select onChange={(e) => setTheme(themes[e.target.value])}>
-            <option value={0}>dracula</option>
-            <option value={1}>Ally</option>
-            <option value={2}>paraisoDark</option>
-            <option value={3}>paraisoLight</option>
-          </select>
+
+          <Typography variant="h6" align="center" className="title">
+            Select Language:
+            <select onChange={(e) => setLanguage(e.target.value)}>
+              <option value="javascript">Javascript</option>
+              <option value="curl">cURL</option>
+              <option value="php">PHP</option>
+            </select>
+          </Typography>
+          <Typography variant="h6" align="center" className="title">
+            Select Theme:
+            <select onChange={(e) => setTheme(themes[e.target.value])}>
+              <option value={0}>dracula</option>
+              <option value={1}>Ally</option>
+              <option value={2}>paraisoDark</option>
+              <option value={3}>paraisoLight</option>
+            </select>
+          </Typography>
         </Typography>
         <Typography align="center">
           This documentation should give you all the information to make your
@@ -308,6 +308,11 @@ const Documents = () => {
           adding comma (,) in between to find the characters with the chosen
           elements.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByElement}
+        />
         <Typography align="center" className="routesURL">
           /playground?elements={" "}
           <span className="end-string">fire,water,holy </span>
@@ -321,6 +326,12 @@ const Documents = () => {
           can query more options between commas and only the characters that has
           both inputs will be displayed.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByStrength}
+        />
+
         <Typography align="center" className="routesURL">
           /playground?strength=
           <span className="end-string">attack blockers,size</span>
@@ -334,6 +345,12 @@ const Documents = () => {
           can query more options between commas and only the characters that has
           all inputs will be displayed.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByWeakness}
+        />
+
         <Typography align="center" className="routesURL">
           /playground?weakness=
           <span className="end-string">slow movement,low hp</span>
@@ -347,6 +364,12 @@ const Documents = () => {
           can also query more options between commas and only the characters
           that has all inputs will be displayed.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByResistance}
+        />
+
         <Typography align="center" className="routesURL">
           /playground?resistance=
           <span className="end-string">poison,confuse,death</span>
@@ -360,6 +383,12 @@ const Documents = () => {
           more options between commas and only the characters that has all
           inputs will be displayed.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByWeapon}
+        />
+
         <Typography align="center" className="routesURL">
           /playground?weapon=
           <span className="end-string">confuse,aereo,meteor</span>
@@ -373,18 +402,17 @@ const Documents = () => {
           the game. You can query more options between commas and only the
           characters that has been in all places mentioned will be displayed.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getCharactersByLocation}
+        />
+
         <Typography align="center" className="routesURL">
           /playground?location=
           <span className="end-string">Palamecia,Pandaemonium</span>
         </Typography>
         <CodeBlock />
-        <Typography variant="h3" align="center" className="title">
-          <div id="other-anguages"> Other Languages </div>
-        </Typography>
-        <Typography>
-          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
-          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
-        </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
         </Typography>
@@ -392,8 +420,9 @@ const Documents = () => {
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
-          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
+          <li>
+          Requests' limit: If you exceed the amount of requests...
+          </li>
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
@@ -402,7 +431,6 @@ const Documents = () => {
           Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
           canes. Apple pie sweet roll danish ice cream cake cake cake dessert
         </Typography>
-        <h2>Playground - Json</h2>
       </div>
     </div>
   );
