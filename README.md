@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+[![Game Characters API](https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Ffor_readme%2Fgame_character_logo_static_for_readme.png?alt=media&token=084dcb69-4432-4a82-b839-dade90d5ac54)]()
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Game Characters API 
 
-In the project directory, you can run:
+Welcome to our Frontend API repository. 
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Game Characters API is [ RESTful ](https://restfulapi.net/) based on the game series [Final Fantasy](https://www.finalfantasy.com/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This documentation will provide you with all the relevent information needed for you to make your HTTP requests such as the available endpoints together with their associated inputs (examples shown).
 
-### `npm test`
+Please also feel free to visit our [ Internet Site ](https://gamecharactersapi.netlify.app/) for an exciting adventure which includes a detailed compilation of the [Documentation](https://gamecharactersapi.netlify.app/documents). Please go [here](https://github.com/steffanisartini/gch-API-backEnd) to access our backend repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Current Version
 
-### `npm run build`
+The current version of the API is 1.
+The Game Characters API is an open API, which means no authentification is required to query the data. Since no authentification is required, there is only support for GET requests. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Rate Limit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There is a rate limit of 60 requests per hour from each IP address to prevent harmful activity. If you reach that limit, you will receive a message and regain access after an hour.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Base Url
 
-### `npm run eject`
+https://gamecharactersapi.herokuapp.com/playground
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Character Attributes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Attribute		| Type		| Description	|
+| -------------	|:---------	| -------------	|
+| id			| number	| Id sequence from the database/images	|
+| name			| string	| A character's full name				|
+| location		| string	| Location/s the character appeared in through out the games	|
+| elements		| string	| The elements from which they are derived		|
+| weakness		| string	| The soft spot to win a battle			|
+| strength		| string	| What makes them powerfull				|
+| resistance	| string	| Which components they are resistant to in a battle	|
+| weapon		| string	| Which weapons they use for the attack		|
+| game			| string	| Which games they appear				|
+| description	| string	| Information about the character		|
+| img_url		| string	| Link to the character’s image			|
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Character Endpoints
 
-## Learn More
+**Query inputs are not case sensitive so go ahead and use upper or lower case letters to GET the data.**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Get all characters
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Endpoint to retrieve all characters.
+```
+/playground
+```
 
-### Code Splitting
+#### Get a single character by name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Endpoint to query by character name.
+```
+/playground?name=chimera
+```
 
-### Analyzing the Bundle Size
+#### Get characters by key elements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Endpoint to query a specific element which a character has. You can query more than one element by separating them with commas. Only the characters matching the input element/s will be selected.
+```
+/playground?elements=fire,water,holy
+```
 
-### Making a Progressive Web App
+#### Get  characters by strength
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Endpoint to query a specific strength which a character has. You can query more than one strength by separating them with commas. Only the characters matching the input strength/s will be selected.
+```
+/playground?strength=attack,blockers,size
+```
 
-### Advanced Configuration
+#### Get characters by weakness
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Endpoint to query a specific weakness which a character has. You can query more than one weakness by separating them with commas. Only the characters matching the input weakeness/es will be selected.
+```
+/playground?weakness=slow,movement,low,hp
+```
 
-### Deployment
+#### Get  characters by resistance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Endpoint to query a specific resistance which a character has. You can query more than one resistance by separating them with commas. Only the characters matching the input resistance/es will be selected.
+```
+/playground?resistance=poison,confuse,death
+```
 
-### `npm run build` fails to minify
+#### Get  characters by weapon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Endpoint to query a specific weapon which a character has. You can query more than one weapon by separating them with commas. Only the characters matching the input weapon/s will be selected.
+```
+/playground?weapon=confuse,aero,meteor
+```
+
+#### Get  characters by location
+
+Endpoint to query a specific location which a character has. You can query more than one location by separating them with commas. Only the characters matching the input location/s will be selected.
+```
+/playground?location=Palamecia,Pandaemonium
+```
+#
+![React Node mongoDB logo](https://firebasestorage.googleapis.com/v0/b/game-characters-api.appspot.com/o/icons%2Ffor_readme%2Freact_node_mogodb_logo.png?alt=media&token=d67f3595-7c60-4909-8a6d-d8a224caf4c7)
