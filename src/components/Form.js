@@ -159,7 +159,6 @@ const Form = ({ setSearchQuery }) => {
         onSubmit={handleSubmit}
         sx={{
           width: "100%",
-          marginTop: "50px",
           display: "flex",
           flexDirection: "row",
         }}
@@ -173,7 +172,8 @@ const Form = ({ setSearchQuery }) => {
           onChange={handleChange}
           style={{
             textDecoration: "none",
-            margin: "1.5rem",
+            marginTop: "2rem",
+            marginLeft: "1rem",
           }}
         />
         <FormControl
@@ -226,7 +226,6 @@ const Form = ({ setSearchQuery }) => {
         <FormControl
           className="formcontrol"
           sx={{
-            gap: "5rem",
             margin: "1rem",
           }}
         >

@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div style={{ width: "100%" }}>
         <img src={wallpaper} alt="wallpaper" style={{ width: "100%" }} />
-        {/* responsive? */}
+
         <Contact />
       </div>
       <div

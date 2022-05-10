@@ -23,8 +23,6 @@ const App = () => {
         } = await axios.get(process.env.REACT_APP_API_URL);
 
         setResponse(randomArray(characters, 5));
-
-        // setPlaygroundChracters();
       } catch (err) {}
     };
     getAllCharacters();
@@ -42,7 +40,7 @@ const App = () => {
           </Route>
         </Routes>
       </Box>
-      <ScrollToTop smooth color="#b0bec5" className="scroll_to_top" />
+      <ScrollToTop smooth color="#fff" className="scroll_to_top" />
     </div>
   );
 };

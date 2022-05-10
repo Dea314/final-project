@@ -13,10 +13,7 @@ const Navbar = () => {
           <img className="main-logo" src={logo} alt="logo" width={270} />
           <NavLink
             to="/"
-            variant="h2"
-            // nowrap
-            component="div"
-            sx={{ ml: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Home
@@ -24,10 +21,7 @@ const Navbar = () => {
 
           <NavLink
             to="/playground"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Playground
@@ -35,10 +29,7 @@ const Navbar = () => {
 
           <NavLink
             to="/documents"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             Documents
@@ -46,10 +37,7 @@ const Navbar = () => {
 
           <NavLink
             to="/about"
-            variant="h5"
-            // noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
           >
             About
