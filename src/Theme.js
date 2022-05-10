@@ -10,7 +10,7 @@ const Theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Exo",
+    fontFamily: "Oxygen",
     fontSize: 20,
   },
 });
