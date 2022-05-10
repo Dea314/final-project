@@ -32,7 +32,7 @@ const ActionAreaCard = ({ character }) => {
             <Typography variant="body2" color="text.secondary">
               {character.description}
             </Typography>
-            <div>
+            <div className="elements">
               {character.elements.map((element) => {
                 return (
                   <>

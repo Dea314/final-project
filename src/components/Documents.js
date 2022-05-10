@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Typography } from "@mui/material";
+import {
+  Typography,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Box,
+} from "@mui/material";
 import { Link } from "react-scroll";
 import CustomizedTables from "./Attributes";
 import CodeBlock from "./Codeblock";
@@ -199,21 +206,31 @@ const Documents = () => {
           <div id="introduction">Introduction</div>
 
           <Typography variant="h6" align="center" className="title">
-            Select Language:
-            <select onChange={(e) => setLanguage(e.target.value)}>
-              <option value="javascript">Javascript</option>
-              <option value="curl">cURL</option>
-              <option value="php">PHP</option>
-            </select>
-          </Typography>
-          <Typography variant="h6" align="center" className="title">
-            Select Theme:
-            <select onChange={(e) => setTheme(themes[e.target.value])}>
-              <option value={0}>dracula</option>
-              <option value={1}>Ally</option>
-              <option value={2}>paraisoDark</option>
-              <option value={3}>paraisoLight</option>
-            </select>
+            <Box sx={{ width: 400 }}>
+              <FormControl fullWidth>
+                <InputLabel id="language">Language</InputLabel>
+                <Select
+                  labelId="language"
+                  onChange={(e) => setLanguage(e.target.value)}
+                >
+                  <MenuItem value="javascript">Javascript</MenuItem>
+                  <MenuItem value="curl">cURL</MenuItem>
+                  <MenuItem value="php">PHP</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControl fullWidth>
+                <InputLabel id="theme">Theme</InputLabel>
+                <Select
+                  labelId="theme"
+                  onChange={(e) => setTheme(themes[e.target.value])}
+                >
+                  <MenuItem value={0}>Dracula</MenuItem>
+                  <MenuItem value={1}>Ally Light</MenuItem>
+                  <MenuItem value={2}>Paraiso Dark</MenuItem>
+                  <MenuItem value={3}>Paraiso Light</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
           </Typography>
         </Typography>
         <Typography align="center">
@@ -420,9 +437,7 @@ const Documents = () => {
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          <li>
-          Requests' limit: If you exceed the amount of requests...
-          </li>
+          <li>Requests' limit: If you exceed the amount of requests...</li>
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
