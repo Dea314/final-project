@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="footerContent">
-        <div>Copyright &copy; 2022 </div>
+        <div className="copyright" >Copyright &copy; 2022 </div>
         <div>
           <a href="https://github.com" target="_blank" rel="noreferrer">
             <img className="git" src={githublogo} alt="githublogo" />
