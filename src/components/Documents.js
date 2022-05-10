@@ -1,9 +1,23 @@
+import { useState } from "react";
 import { Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import CustomizedTables from "./Attributes";
-
+import CodeBlock from "./Codeblock";
+import {
+  dracula,
+  a11yLight,
+  paraisoDark,
+  paraisoLight,
+} from "react-code-blocks";
+import {
+  baseURLSnippets,
+  getSingleCharacterByName,
+} from "../helpers/codeSnippets";
 
 const Documents = () => {
+  const [themes] = useState([dracula, a11yLight, paraisoDark, paraisoLight]);
+  const [theme, setTheme] = useState(dracula);
+  const [language, setLanguage] = useState("javascript");
   return (
     <div className="wrapper-all">
       <div className="vertical-bar">
@@ -150,15 +164,14 @@ const Documents = () => {
               Get a character by location
             </Link>
           </li>
-
           <li>
             <Link
-              to="location"
+              to="other-anguages"
               spy={true}
               smooth={true}
               style={{ textDecoration: "none" }}
             >
-              Location
+              Other Languages
             </Link>
           </li>
 
@@ -189,6 +202,19 @@ const Documents = () => {
 
         <Typography variant="h4" align="center" className="title">
           <div id="introduction">Introduction</div>
+          SELECT LANGUAGE:
+          <select onChange={(e) => setLanguage(e.target.value)}>
+            <option value="javascript">Javascript</option>
+            <option value="curl">cURL</option>
+            <option value="php">PHP</option>
+          </select>
+          SELECT THEME:
+          <select onChange={(e) => setTheme(themes[e.target.value])}>
+            <option value={0}>dracula</option>
+            <option value={1}>Ally</option>
+            <option value={2}>paraisoDark</option>
+            <option value={3}>paraisoLight</option>
+          </select>
         </Typography>
         <Typography align="center">
           This documentation should give you all the information to make your
@@ -215,6 +241,11 @@ const Documents = () => {
         <Typography variant="h4" align="center" className="title">
           <div id="base">Base URL</div>
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={baseURLSnippets}
+        />
         <Typography align="center" className="routesURL">
           https://gamecharactersapi.herokuapp.com/playground
         </Typography>
@@ -243,6 +274,11 @@ const Documents = () => {
         <Typography>
           Endpoint that retrieve information from all characters.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={baseURLSnippets}
+        />
         <Typography align="center" className="routesURL">
           /playground
         </Typography>
@@ -255,8 +291,13 @@ const Documents = () => {
           query is not case sensitive, so go ahead and use upper or lower case
           to GET the data.
         </Typography>
+        <CodeBlock
+          language={language}
+          theme={theme}
+          snippets={getSingleCharacterByName}
+        />
         <Typography align="center" className="routesURL">
-         /playground?name=<span className="end-string">chimera </span>  
+          /playground?name=<span className="end-string">chimera </span>
         </Typography>
         <Typography variant="h4" align="center" className="title">
           <div id="by-element">Get characters by key elements</div>
@@ -268,7 +309,8 @@ const Documents = () => {
           elements.
         </Typography>
         <Typography align="center" className="routesURL">
-         /playground?elements= <span className="end-string">fire,water,holy </span> 
+          /playground?elements={" "}
+          <span className="end-string">fire,water,holy </span>
         </Typography>
 
         <Typography variant="h4" align="center" className="title">
@@ -280,8 +322,8 @@ const Documents = () => {
           both inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
-
-         /playground?strength=<span className="end-string">attack blockers,size</span>  
+          /playground?strength=
+          <span className="end-string">attack blockers,size</span>
         </Typography>
 
         <Typography variant="h4" align="center" className="title">
@@ -293,8 +335,8 @@ const Documents = () => {
           all inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
-
-         /playground?weakness=<span className="end-string">slow movement,low hp</span>
+          /playground?weakness=
+          <span className="end-string">slow movement,low hp</span>
         </Typography>
 
         <Typography variant="h4" align="center" className="title">
@@ -306,8 +348,8 @@ const Documents = () => {
           that has all inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
-
-         /playground?resistance=<span className="end-string">poison,confuse,death</span>
+          /playground?resistance=
+          <span className="end-string">poison,confuse,death</span>
         </Typography>
 
         <Typography variant="h4" align="center" className="title">
@@ -319,10 +361,9 @@ const Documents = () => {
           inputs will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
-
-         /playground?weapon=<span className="end-string">confuse,aereo,meteor</span>
+          /playground?weapon=
+          <span className="end-string">confuse,aereo,meteor</span>
         </Typography>
-
 
         <Typography variant="h4" align="center" className="title">
           <div id="by-location">Get characters by location</div>
@@ -333,15 +374,19 @@ const Documents = () => {
           characters that has been in all places mentioned will be displayed.
         </Typography>
         <Typography align="center" className="routesURL">
-
-        /playground?location=<span className="end-string">Palamecia,Pandaemonium</span>
+          /playground?location=
+          <span className="end-string">Palamecia,Pandaemonium</span>
         </Typography>
-
+        <CodeBlock />
         <Typography variant="h3" align="center" className="title">
-          <div id="location"> Location</div>
+          <div id="other-anguages"> Other Languages </div>
         </Typography>
         <Typography>
-          Biscuit 
+          Gummi bears danish jelly beans tootsie roll carrot cake apple pie
+          soufflé pie caramels. Marshmallow soufflé shortbread bear claw sweet
+        </Typography>
+        <Typography variant="h3" align="center" className="title">
+          <div id="collaboration"> Collaboration</div>
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="errors"> Errors</div>

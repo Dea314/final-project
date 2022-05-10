@@ -11,7 +11,6 @@ import { randomArray } from "./helpers/helpers.js";
 import "./App.css";
 import { Box } from "@mui/material";
 import ScrollToTop from "react-scroll-to-top";
-const response = require("./response.json");
 
 const App = () => {
   const [response, setResponse] = useState([]);
