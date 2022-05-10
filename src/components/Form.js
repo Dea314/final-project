@@ -414,13 +414,14 @@ const Form = ({ setSearchQuery }) => {
           className="find-one-character"
           type="submit"
           variant="contained"
-          size="large"
+          size="medium"
           margin="normal"
           style={{
             textDecoration: "none",
             margin: "1rem",
             float: "right",
-            marginRight: "4rem",
+            marginRight: "3rem",
+            width: "10%",
           }}
           sx={{
             gap: "1rem",
