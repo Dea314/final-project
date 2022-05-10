@@ -9,6 +9,21 @@
   gap: 1rem;
 }
 
+.home_intro_h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+.home_intro_h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ebf5f0;
+  text-align: center;
+}
+
 .toolbar {
   margin: 0.5rem;
   padding-left: 0.5rem;
