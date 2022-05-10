@@ -12,6 +12,8 @@ const Navbar = () => {
         <Toolbar className="toolbar" disableGutters>
           <img className="main-logo" src={logo} alt="logo" width={270} />
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/"
             sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -20,6 +22,8 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/playground"
             sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -28,6 +32,8 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/documents"
             sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "1rem" }}
@@ -36,6 +42,8 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            className="navlink"
+            activeclassname="active"
             to="/about"
             sx={{ display: { xs: "flex", md: "none" } }}
             style={{ textDecoration: "none", margin: "1rem" }}

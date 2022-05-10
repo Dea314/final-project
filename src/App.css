@@ -10,7 +10,7 @@
 }
 
 .toolbar {
-  margin: 2.5rem;
+  margin: 0.5rem;
   padding-left: 0.5rem;
 }
 li {
@@ -84,4 +84,8 @@ ul {
 .body-for-cards {
   display: flex;
   justify-content: center;
+}
+
+.navlink:active {
+  color: white;
 }
