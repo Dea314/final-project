@@ -26,13 +26,13 @@ const ActionAreaCard = ({ character }) => {
             }}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5">
+            <Typography gutterBottom variant="h5" color="#5279EC">
               {character.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {character.description}
             </Typography>
-            <div>
+            <div className="elements">
               {character.elements.map((element) => {
                 return (
                   <>

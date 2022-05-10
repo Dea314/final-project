@@ -38,3 +38,8 @@
   overflow: auto;
   margin-bottom: 100px;
 }
+
+.elements img {
+  margin-top: 2rem;
+  margin: 7px;
+}

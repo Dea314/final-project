@@ -64,12 +64,17 @@ const Copycard = ({ character }) => {
                 }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  color="#5279EC"
+                >
                   {character.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {character.description}
-                  <div>
+                  <div className="elements">
                     {character.elements.map((element) => {
                       return (
                         <>
@@ -77,6 +82,8 @@ const Copycard = ({ character }) => {
                             src={assets.elements[element.toLowerCase()]}
                             alt={element}
                             height="25"
+                            display="inline-block"
+                            margin="25px"
                           />
                         </>
                       );
