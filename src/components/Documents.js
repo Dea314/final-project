@@ -200,7 +200,9 @@ const Documents = () => {
         </ul>
       </div>
       <div className="wrapper-text">
-        <h1 align="center">API Documentation</h1>
+      <Typography variant="h4" align="center" className="title">
+        <h3 className="doc-title">API Documentation</h3>
+      </Typography>
 
         <Typography variant="h4" align="center" className="title">
           <div id="introduction">Introduction</div>
@@ -437,14 +439,17 @@ const Documents = () => {
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          <li>Requests' limit: If you exceed the amount of requests...</li>
+          All the query requests are programmed with status code accordinly with 
+          the standard best practices.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
         </Typography>
         <Typography>
-          Biscuit cake lemon drops danish carrot cake sesame snaps pastry candy
-          canes. Apple pie sweet roll danish ice cream cake cake cake dessert
+          Our intention is to continue working and developing better features for
+          this project, so don't be shy; we would love to hear your suggestions and
+          in case you are interest in collaborate within this project feel free to contact us
+          directly or open a pull request.🙂
         </Typography>
       </div>
     </div>

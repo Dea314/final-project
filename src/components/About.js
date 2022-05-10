@@ -10,7 +10,7 @@ const About = () => {
         <img src={wallpaper} alt="wallpaper" style={{ width: "100%" }} />
 
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>WHO</div>
+          <div className="about-tittle" >WHO</div>
         </Typography>
         <Typography className="wrapper-about">
           We are proud developers from WBS Coding School - Berlin whose
@@ -22,7 +22,7 @@ const About = () => {
           touch!
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>WHAT</div>
+          <div className="about-tittle">WHAT</div>
         </Typography>
         <Typography className="wrapper-about">
           This website provides a RESTful API interface to highly detailed
@@ -31,7 +31,7 @@ const About = () => {
           images and personal traits.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>WHAT IS AN API?</div>
+          <div className="about-tittle">WHAT IS AN API?</div>
         </Typography>
         <Typography className="wrapper-about">
           An API (Application Programming Interface) is a contract that allows
@@ -42,7 +42,7 @@ const About = () => {
           verbs, errors, and hyperlinks.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>WHY</div>
+        <div className="about-tittle">WHY</div>
         </Typography>
         <Typography className="wrapper-about">
           We all love fantasy books, movies, and games, so we decided to
@@ -50,17 +50,17 @@ const About = () => {
           practicing, learning, etc.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>COPYRIGHT</div>
+        <div className="about-tittle">COPYRIGHT</div>
         </Typography>
         <Typography className="wrapper-about">
-          The data is used without a claim of ownership and belong to their
+          The characters' data is used without a claim of ownership and belong to their
           respective owners. This API is open source and uses a BSD license.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div>WHERE TO START</div>
+        <div className="about-tittle">WHERE TO START</div>
         </Typography>
         <Typography className="wrapper-about">
-          We have awesome &nbsp;
+          We have an awesome &nbsp;
           <NavLink
             className="navlink"
             activeclassname="active"

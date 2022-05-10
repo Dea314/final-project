@@ -3,6 +3,8 @@
   width: 100%;
   height: auto;
   background-color: #5279ec;
+  background: rgb(53,128,209);
+  background: linear-gradient(0deg, rgba(53,128,209,1) 0%, rgba(255,255,255,1) 92%); 
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
