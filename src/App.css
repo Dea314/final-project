@@ -9,6 +9,23 @@
   gap: 1rem;
 }
 
+.home_intro_p1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+.home_intro_p2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #ebf5f0;
+}
+
 .toolbar {
   margin: 0.5rem;
   padding-left: 0.5rem;
