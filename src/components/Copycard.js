@@ -66,12 +66,12 @@ const Copycard = ({ character }) => {
         </div>
 
         <div className="card__side card__side--back">
-          <Card sx={{ maxWidth: 350 }}>
+          <Card sx={{ maxWidth: 370, minHeight: "850px" }}>
             <CardActionArea>
               <CardMedia
                 className="card-side back"
                 component="img"
-                height="350"
+                height="250"
                 image={character.img_url}
                 alt={character.name}
                 sx={{
@@ -81,7 +81,11 @@ const Copycard = ({ character }) => {
                   margin: "0",
                 }}
               />
-              <CardContent>
+              <CardContent
+                sx={{
+                  minHeight: "600px",
+                }}
+              >
                 <Typography
                   gutterBottom
                   variant="h5"

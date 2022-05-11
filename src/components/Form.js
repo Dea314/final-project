@@ -168,11 +168,11 @@ const Form = ({ setSearchQuery }) => {
           className="search-field"
           type="text"
           label="Name..."
-          size="small"
+          size="medium"
           onChange={handleChange}
           style={{
             textDecoration: "none",
-            marginTop: "2rem",
+            marginTop: "1rem",
             marginLeft: "1rem",
           }}
         />
