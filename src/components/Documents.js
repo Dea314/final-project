@@ -245,7 +245,7 @@ const Documents = () => {
         </Typography>
         <Typography>
         The Game Characters API is open source, which means no authentication is 
-        required to query the data.Since no authentication is needed, there is only 
+        required to query the data. Since no authentication is needed, there is only 
         support for GET requests. The current version of the API is 1.
         </Typography>
         <Typography variant="h4" align="center" className="title">
@@ -272,9 +272,9 @@ const Documents = () => {
         </Typography>
         <Typography>
           The database structure is inspired by the Final Fantasy games and all
-          the amazing characters through out the series. The intention is to
-          continue enlarging the database gradualy with new characters. If you
-          are a big fan of the series and want to contribure to this project
+          the amazing characters throughout the series. The intention is to
+          continue enlarging the database gradually with new characters. If you
+          are a big fan of the series and want to contribute to this project
           feel free to contact us.
         </Typography>
         <Typography variant="h4" align="center" className="title">
@@ -290,7 +290,7 @@ const Documents = () => {
           <div id="get-all">Get all characters</div>
         </Typography>
         <Typography>
-          Endpoint that retrieve information from all characters.
+          Endpoint that retrieves information from all characters.
         </Typography>
         <CodeBlock
           language={language}
@@ -322,8 +322,8 @@ const Documents = () => {
         </Typography>
         <Typography>
         This endpoint queries a specific element that is contained within
-          the character data. You can query one or multiple elements at once
-          , adding a comma (,) in between to find the characters with the chosen
+          the character data. You can query one or more elements at once,
+          separated by a comma, to find the characters with the chosen
           elements.
         </Typography>
         <CodeBlock
@@ -378,9 +378,9 @@ const Documents = () => {
           <div id="by-resistance">Get characters by resistance</div>
         </Typography>
         <Typography>
-          This endpoint queries one or more resistance data per character. You
+          This endpoint queries one or more resistances per character. You
           can also query more options between commas and only the characters
-          that has all inputs will be displayed.
+          that have all inputs will be displayed.
         </Typography>
         <CodeBlock
           language={language}
@@ -435,8 +435,7 @@ const Documents = () => {
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          All the query requests are programmed with status code accordingly with 
-          the standard best practices.
+          All the query requests are programmed with status codes according to standard best practices.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
