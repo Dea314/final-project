@@ -185,6 +185,12 @@ ul {
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(196, 186, 186, 0.5);
 }
+.mernlogo{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 .footerContent {
   margin-top: 100px;
