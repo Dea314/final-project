@@ -51,7 +51,8 @@ const Playground = () => {
     };
     getCharacter();
   }, [searchQuery]);
-
+  const pLength = playgroundCharacters.length;
+  console.log("length", pLength);
   return (
     <>
       <ToastContainer />
@@ -80,7 +81,7 @@ const Playground = () => {
             height: "100%",
           }}
         >
-          {playgroundCharacters.length
+          {pLength
             ? playgroundCharacters.map((character) => {
                 return (
                   <Grid
