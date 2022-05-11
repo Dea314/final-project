@@ -26,9 +26,9 @@
   text-align: center;
   justify-content: center;
   background: #5F2F42;
-  background: -moz-linear-gradient(left, #5F2F42 0%, #1B9CD5 50%, #A9C5BF 100%);
-  background: -webkit-linear-gradient(left, #5F2F42 0%, #1B9CD5 50%, #A9C5BF 100%);
-  background: linear-gradient(to right, #5F2F42 0%, #1B9CD5 50%, #A9C5BF 100%);
+  background: -moz-linear-gradient(left, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
+  background: -webkit-linear-gradient(left, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
+  background: linear-gradient(to right, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
   padding-top: 30px;
 }
 

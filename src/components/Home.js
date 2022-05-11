@@ -1,5 +1,6 @@
 import React from "react";
 import ActionAreaCard from "./ActionAreaCard";
+import wallpaper from "../img/wallpaper.jpg";
 
 const Home = ({ response }) => {
   console.log("response from home", response);
@@ -9,6 +10,10 @@ const Home = ({ response }) => {
     <div className = "home_intro_p1">
       <h1>The RESTful Game Characters API</h1>
     </div>
+    <div style={{ width: "100%" }}>
+        <img src={wallpaper} alt="wallpaper" style={{ width: "100%" }} />
+      </div>
+
     <div className = "home_intro_p2">
       <p>A collection of character details from the series
         <br></br> 
