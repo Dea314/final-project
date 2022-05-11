@@ -5,17 +5,17 @@ const CopyButton = ({ textToCopy }) => {
   return (
     <button
       style={{
-        backgroundColor: "#5279EC",
+        backgroundColor: "#3580d1",
         color: "#fff",
         padding: "1rem",
         borderRadius: "5px",
-        fontSize: "1rem",
+        fontSize: "1.2rem",
         border: "1px solid white",
         marginLeft: "3rem",
       }}
       onClick={() => handleCopy(textToCopy)}
     >
-      Copy to clipboard
+      Copy from clipboard
     </button>
   );
 };

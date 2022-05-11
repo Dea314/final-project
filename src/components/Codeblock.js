@@ -10,7 +10,7 @@ const CodeSnippet = ({ language, theme, snippets }) => {
   }, [language]);
 
   return (
-    <div>
+    <div className="codeblock">
       {language && code && (
         <CodeBlock
           text={code}
