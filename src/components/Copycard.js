@@ -12,11 +12,11 @@ const Copycard = ({ character }) => {
   return (
     <div className="artboard">
       <div className="card">
-        <div className="card__side card__side--back">
+        <div className="card__side card__side--front">
           <Card sx={{ maxWidth: 370 }}>
             <CardActionArea>
               <CardMedia
-                className="card-side back"
+                className="card-side-front"
                 component="img"
                 height="350"
                 image={character.img_url}
@@ -35,23 +35,32 @@ const Copycard = ({ character }) => {
                   component="div"
                   fontSize={18}
                 >
-                  name: {character.name} <br />
-                  location: {character.location.join(", ")} <br />
-                  elements: {character.elements.join(", ")} <br />
-                  weakness: {character.weakness.join(", ")} <br />
-                  strength: {character.strength.join(", ")} <br />
-                  weapon: {character.weapon.join(", ")}
+                  <div className="card-name">{character.name} </div> <br />
+                  <div className="card-name-all">location: </div>
+                  {character.location.join(", ")}
+                  <br />
+                  <div className="card-name-all">elements: </div>
+                  {character.elements.join(", ")}
+                  <br />
+                  <div className="card-name-all">weakness: </div>
+                  {character.weakness.join(", ")}
+                  <br />
+                  <div className="card-name-all">strength: </div>
+                  {character.strength.join(", ")}
+                  <br />
+                  <div className="card-name-all">weapon: </div>
+                  {character.weapon.join(", ")}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
 
-        <div className="card__side card__side--front">
+        <div className="card__side card__side--back">
           <Card sx={{ maxWidth: 350 }}>
             <CardActionArea>
               <CardMedia
-                className="card-side front"
+                className="card-side back"
                 component="img"
                 height="350"
                 image={character.img_url}

@@ -41,7 +41,7 @@ const Navbar = () => {
             activeclassname="active"
             to="/documents"
             sx={{ display: { xs: "none", md: "flex" } }}
-            style={{ textDecoration: "none", margin: "2rem"}}
+            style={{ textDecoration: "none", margin: "2rem" }}
           >
             Documents
           </NavLink>
