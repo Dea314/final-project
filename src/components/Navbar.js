@@ -58,7 +58,6 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
       <div>
-        <hr />
         <Outlet />
       </div>
     </>

@@ -1,6 +1,6 @@
 .card {
-  flex: initial;
-  position: relative;
+  /* flex: initial; */
+  /* position: relative; */
   height: 52rem;
   width: 350px;
   -moz-perspective: 200rem;
@@ -25,6 +25,7 @@
 
 .card__side--back {
   transform: rotateY(180deg);
+  position: relative;
 }
 .card:hover .card__side--back {
   transform: rotateY(0);
@@ -35,7 +36,7 @@
 
 .artboard {
   height: 750px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .elements img {

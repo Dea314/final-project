@@ -13,7 +13,7 @@ const Copycard = ({ character }) => {
     <div className="artboard">
       <div className="card">
         <div className="card__side card__side--front">
-          <Card sx={{ maxWidth: 370 }}>
+          <Card sx={{ maxWidth: 370, minHeight: "850px" }}>
             <CardActionArea>
               <CardMedia
                 className="card-side-front"
@@ -28,7 +28,11 @@ const Copycard = ({ character }) => {
                   margin: "0",
                 }}
               />
-              <CardContent>
+              <CardContent
+                sx={{
+                  height: "500px",
+                }}
+              >
                 <Typography
                   gutterBottom
                   variant="h6"
@@ -36,20 +40,25 @@ const Copycard = ({ character }) => {
                   fontSize={18}
                 >
                   <div className="card-name">{character.name} </div> <br />
-                  <div className="card-name-all">location: </div>
-                  {character.location.join(", ")}
+                  <div>
+                    <b>location:</b> {character.location.join(", ")}
+                  </div>
                   <br />
-                  <div className="card-name-all">elements: </div>
-                  {character.elements.join(", ")}
+                  <div>
+                    <b>elements:</b> {character.elements.join(", ")}
+                  </div>
                   <br />
-                  <div className="card-name-all">weakness: </div>
-                  {character.weakness.join(", ")}
+                  <div>
+                    <b>weakness:</b> {character.weakness.join(", ")}
+                  </div>
                   <br />
-                  <div className="card-name-all">strength: </div>
-                  {character.strength.join(", ")}
+                  <div>
+                    <b>strength:</b> {character.strength.join(", ")}
+                  </div>
                   <br />
-                  <div className="card-name-all">weapon: </div>
-                  {character.weapon.join(", ")}
+                  <div>
+                    <b>weapon:</b> {character.weapon.join(", ")}{" "}
+                  </div>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -57,12 +66,12 @@ const Copycard = ({ character }) => {
         </div>
 
         <div className="card__side card__side--back">
-          <Card sx={{ maxWidth: 350 }}>
+          <Card sx={{ maxWidth: 370, minHeight: "850px" }}>
             <CardActionArea>
               <CardMedia
                 className="card-side back"
                 component="img"
-                height="350"
+                height="250"
                 image={character.img_url}
                 alt={character.name}
                 sx={{
@@ -72,7 +81,11 @@ const Copycard = ({ character }) => {
                   margin: "0",
                 }}
               />
-              <CardContent>
+              <CardContent
+                sx={{
+                  minHeight: "600px",
+                }}
+              >
                 <Typography
                   gutterBottom
                   variant="h5"

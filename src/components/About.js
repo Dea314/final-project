@@ -10,7 +10,7 @@ const About = () => {
         <img src={wallpaper} alt="wallpaper" style={{ width: "100%" }} />
 
         <Typography variant="h4" align="center" className="wrapper-about">
-          <div className="about-tittle" >WHO</div>
+          <div className="about-tittle">WHO</div>
         </Typography>
         <Typography className="wrapper-about">
           We are proud developers from WBS Coding School - Berlin whose
@@ -42,7 +42,7 @@ const About = () => {
           verbs, errors, and hyperlinks.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-        <div className="about-tittle">WHY</div>
+          <div className="about-tittle">WHY</div>
         </Typography>
         <Typography className="wrapper-about">
           We all love fantasy books, movies, and games, so we decided to
@@ -50,14 +50,15 @@ const About = () => {
           practicing, learning, etc.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-        <div className="about-tittle">COPYRIGHT</div>
+          <div className="about-tittle">COPYRIGHT</div>
         </Typography>
         <Typography className="wrapper-about">
-          The characters' data is used without a claim of ownership and belong to their
-          respective owners. This API is open source and uses a BSD license.
+          The characters' data is used without a claim of ownership and belong
+          to their respective owners. This API is open source and uses a BSD
+          license.
         </Typography>
         <Typography variant="h4" align="center" className="wrapper-about">
-        <div className="about-tittle">WHERE TO START</div>
+          <div className="about-tittle">WHERE TO START</div>
         </Typography>
         <Typography className="wrapper-about">
           We have an awesome &nbsp;
@@ -66,7 +67,10 @@ const About = () => {
             activeclassname="active"
             to="/documents"
             // sx={{ display: { xs: "none", md: "flex" } }}
-            style={{ textDecoration: "none", color: "#5279ec" }}
+            style={{
+              textDecoration: "none",
+              color: "#5279ec",
+            }}
           >
             documentation
           </NavLink>
