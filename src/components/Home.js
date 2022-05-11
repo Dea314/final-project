@@ -7,7 +7,7 @@ const Home = ({ response }) => {
   return (
     <>
     <div className = "home_intro_p1">
-      <h1>The RESTful Games Character API</h1>
+      <h1>The RESTful Game Characters API</h1>
     </div>
     <div className = "home_intro_p2">
       <p>A collection of character details from the series
