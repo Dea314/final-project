@@ -3,9 +3,11 @@ import githublogo from "../img/githublogo.png";
 import wbs from "../img/wbs.png";
 import fflogo from "../img/fflogo.png";
 
+
 const Footer = () => {
   return (
     <>
+    
       <div className="footerContent">
         <div className="copyright" >Copyright &copy; 2022 </div>
         <div>
@@ -32,7 +34,7 @@ const Footer = () => {
             <img className="wbs" src={wbs} alt="wbs-logo" />
           </a>
         </div>
-        <div>Made by Steffani, Francois & Danijela </div>
+        <div className="sfd-footer">Made by Steffani, Francois & Danijela </div>
       </div>
     </>
   );

@@ -43,7 +43,7 @@ const Navbar = () => {
             sx={{ display: { xs: "none", md: "flex" } }}
             style={{ textDecoration: "none", margin: "2rem" }}
           >
-            Documents
+            Documentation
           </NavLink>
 
           <NavLink

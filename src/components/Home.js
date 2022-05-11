@@ -8,11 +8,12 @@ const Home = ({ response }) => {
   return (
     <>
       <div className="home_intro_p1">
-        <h1>The RESTful Games Character API</h1>
+        <h1>The RESTful Game Characters API</h1>
       </div>
       <div style={{ width: "100%" }}>
         <img src={wallpaper} alt="wallpaper" style={{ width: "100%" }} />
       </div>
+
       <div className="home_intro_p2">
         <p>
           A collection of character details from the series
@@ -20,8 +21,17 @@ const Home = ({ response }) => {
           Final Fantasy at your finger tips through our RESTful API.
           <br></br>
           <br></br>
-          Have a look at the <a href="/Documents">documents</a> or have a go at
-          the <a href="/Playground">playground</a> right now!
+          <div>
+            Have a look at the{" "}
+            <a class="anchor-tags" href="/Documents">
+              documentation
+            </a>{" "}
+            or have a go at the{" "}
+            <a class="anchor-tags" href="/Playground">
+              playground
+            </a>{" "}
+            right now!
+          </div>
         </p>
       </div>
       <div></div>

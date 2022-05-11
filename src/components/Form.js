@@ -30,7 +30,7 @@ const Form = ({ setSearchQuery }) => {
     optionsWeapon: [],
   });
 
-  const [isAllSelected, setIsAllSelected] = useState({
+  const [isAllSelected] = useState({
     optionsElement:
       optionsElement.length > 0 &&
       selected.optionsElement.length === optionsElement.length,
