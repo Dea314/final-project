@@ -35,11 +35,11 @@ function createData(attribute: string, type: string, description: string) {
 
 const rows = [
   createData("id", "number", "Id refered to the sequence of the images"),
-  createData("name", "string", "A character´s full name"),
+  createData("name", "string", "A Character's full name"),
   createData(
     "location",
     "string",
-    "Location/s that the Character appeard through out the Games"
+    "Locations that the Character appeared in through out the Games"
   ),
   createData("elements", "string", "Which elements they come from"),
   createData("weakness", "string", "The soft spot to win a battle"),
@@ -49,10 +49,10 @@ const rows = [
     "string",
     "Which components they are resistant to in a battle"
   ),
-  createData("weapon", "string", "Which wapon they use for the attack"),
-  createData("game", "string", "Which games they appear"),
+  createData("weapon", "string", "Which weapons they use for the attack"),
+  createData("game", "string", "Which games they appear in"),
   createData("description", "string", "Information about the Character"),
-  createData("img_url", "string", "Link to the Character´s image"),
+  createData("img_url", "string", "Link to the Character's image"),
 ];
 
 export default function CustomizedTables() {
