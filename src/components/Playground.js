@@ -81,7 +81,7 @@ const Playground = () => {
             height: "100%",
           }}
         >
-          {pLength
+          {playgroundCharacters
             ? playgroundCharacters.map((character) => {
                 return (
                   <Grid
