@@ -450,7 +450,7 @@ const Documents = () => {
           in case you are interested in collaborating on this project, feel free to contact us
           directly or open a pull request.🙂
           <div className="mernlogo">
-            <a href="https://www.mongodb.com/mern-stack"  rel="noreferrer">
+            <a href="https://www.mongodb.com/mern-stack" target="_blank" rel="noreferrer">
             <img className="mernLogo" src={mernLogo} alt="Mern-Logo" />
             </a>
           </div> 
