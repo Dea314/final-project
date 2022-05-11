@@ -81,21 +81,19 @@ const Playground = () => {
           }}
         >
           {playgroundCharacters
-            ? playgroundCharacters.map((character) => {
-                return (
-                  <Grid
-                    item
-                    key={character._id}
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      height: "100%",
-                    }}
-                  >
-                    <Copycard character={character} />
-                  </Grid>
-                );
-              })
+            ? playgroundCharacters.map((character) => (
+                <Grid
+                  item
+                  key={character._id}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    height: "100%",
+                  }}
+                >
+                  <Copycard character={character} />
+                </Grid>
+              ))
             : "No results"}
         </Grid>
       </div>
