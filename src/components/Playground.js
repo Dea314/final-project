@@ -51,8 +51,7 @@ const Playground = () => {
     };
     getCharacter();
   }, [searchQuery]);
-  const pLength = playgroundCharacters.length;
-  console.log("length", pLength);
+
   return (
     <>
       <ToastContainer />
