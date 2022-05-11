@@ -25,6 +25,7 @@ const App = () => {
       } catch (err) {}
     };
     getAllCharacters();
+    console.log("RESPONSE", response);
   }, []);
 
   return (
