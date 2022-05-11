@@ -25,24 +25,28 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background: #5F2F42;
+  background: #5f2f42;
   background: -moz-linear-gradient(left, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
-  background: -webkit-linear-gradient(left, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #522f5f 0%,
+    #71c4e8 50%,
+    #a9c0c5 100%
+  );
   background: linear-gradient(to right, #522f5f 0%, #71c4e8 50%, #a9c0c5 100%);
   padding-top: 30px;
 }
 
-.anchor-tags{
+.anchor-tags {
   text-decoration: none;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.anchor-tags:hover{
-color: #212226;
-cursor: pointer;
-  
+.anchor-tags:hover {
+  color: #212226;
+  cursor: pointer;
 }
 
 .toolbar {
@@ -66,10 +70,10 @@ ul {
   border-right: solid 3px #7f92cd;
   font-size: 20px;
   line-height: 2.6;
-  
 }
 
-.title {
+.title,
+.contact-us {
   padding: 80px 50px 20px 40px;
   justify-content: center;
   color: transparent;
@@ -78,7 +82,6 @@ ul {
   -moz-background-clip: text;
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(196, 186, 186, 0.5);
-
 }
 
 .wrapper-search {
@@ -103,11 +106,10 @@ ul {
   border: solid 3px rgb(107, 107, 108);
   border-radius: 30px;
   padding: 5px 300px 5px 60px;
-  margin:60px;
+  margin: 60px;
 }
-.codeblock{
-  margin:30px 5px;
-  
+.codeblock {
+  margin: 30px 5px;
 }
 
 .scroll_to_top {
@@ -139,13 +141,12 @@ ul {
 }
 
 .navlink:active {
-color: white;
-transition: margin-right 4s ease-in-out 1s;
-  
+  color: white;
+  transition: margin-right 4s ease-in-out 1s;
 }
-.navlink{
-  color:#355ed1;
-  font-weight:bold;
+.navlink {
+  color: #355ed1;
+  font-weight: bold;
   font-size: larger;
 }
 
@@ -157,7 +158,7 @@ transition: margin-right 4s ease-in-out 1s;
   padding-top: 90px;
   padding-bottom: 10px;
 }
-.doc-title{
+.doc-title {
   justify-content: center;
   color: transparent;
   background: #355ed1;
@@ -167,14 +168,14 @@ transition: margin-right 4s ease-in-out 1s;
   text-shadow: 0px 3px 3px rgba(196, 186, 186, 0.5);
 }
 
-.copyright{
+.copyright {
   font-size: 20px;
 }
-.sfd-footer{
+.sfd-footer {
   font-size: 20px;
 }
 
-.about-tittle{
+.about-tittle {
   padding: 80px 50px 20px 40px;
   justify-content: center;
   color: transparent;
@@ -183,10 +184,9 @@ transition: margin-right 4s ease-in-out 1s;
   -moz-background-clip: text;
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(196, 186, 186, 0.5);
-
 }
 
-.footerContent{
+.footerContent {
   margin-top: 100px;
   padding-top: 100px;
 }

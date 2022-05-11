@@ -59,7 +59,7 @@ const Contact = () => {
         }}
       >
         <Typography variant="h3" align="center">
-          Contact Us
+          <div className="contact-us">Contact Us </div>
         </Typography>
         <TextField
           type="text"
@@ -87,12 +87,16 @@ const Contact = () => {
         />
         <TextField
           multiline
+          minRows="7"
           type="text"
           id="message"
           name="message"
           label="Message"
           margin="normal"
           value={message}
+          sx={{
+            marginBottom: "15px",
+          }}
           onChange={handleInputChange}
           error={Boolean(errors?.message)}
           helperText={errors?.message}
