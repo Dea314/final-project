@@ -35,11 +35,18 @@
 
 .artboard {
   height: 750px;
-  overflow: auto;
   margin-bottom: 100px;
 }
 
 .elements img {
   margin-top: 2rem;
   margin: 7px;
+}
+
+.card-name {
+  color: #5279ec;
+  font-size: 2rem;
+}
+.card-name-all {
+  font-weight: bold;
 }
