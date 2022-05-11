@@ -26,7 +26,7 @@ const App = () => {
     };
     getAllCharacters();
     console.log("RESPONSE", response);
-  }, []);
+  }, [response]);
 
   return (
     <div className="bar">
