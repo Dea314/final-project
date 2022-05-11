@@ -26,12 +26,15 @@ import {
   getCharactersByWeapon,
   getCharactersByLocation,
 } from "../helpers/codeSnippets";
+import mernLogo from "../img/mernLogo.png";
+
 
 const Documents = () => {
   const [themes] = useState([dracula, a11yLight, paraisoDark, paraisoLight]);
   const [theme, setTheme] = useState(dracula);
   const [language, setLanguage] = useState("javascript");
   return (
+    <>
     <div className="wrapper-all">
       <div className="vertical-bar">
         <ul>
@@ -435,8 +438,8 @@ const Documents = () => {
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          All the query requests are programmed with status code accordingly with 
-          the standard best practices.
+        All the query requests were programmed with status code in accordance with 
+        the standard best practices.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
@@ -446,10 +449,26 @@ const Documents = () => {
           this project, so don't be shy; we would love to hear your suggestions and
           in case you are interested in collaborating on this project, feel free to contact us
           directly or open a pull request.🙂
+          <div className="mernlogo">
+            <a href="https://www.mongodb.com/mern-stack"  rel="noreferrer">
+            <img className="mernLogo" src={mernLogo} alt="Mern-Logo" />
+            </a>
+          </div> 
         </Typography>
+        <Typography>
+        This project was done following the MERN stack. MERN stands for MongoDB, Express, React 
+          , and Node. MongoDB - come along for the database, Express(.js) and Node.js as web frameworks 
+          for the API and, React(.js) as a client-side JavaScript framework for the Documentation. 
+          Also, the webserver is powered by Node(.js). If you want to know about this project stack,
+          feel free to take a look at the documentation by clicking the image above.
+
+        </Typography>
+
       </div>
-    </div>
+    </div>    
+  </>
   );
 };
+
 
 export default Documents;
