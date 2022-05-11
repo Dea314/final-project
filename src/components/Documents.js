@@ -244,10 +244,9 @@ const Documents = () => {
           <div id="currentVersion">Current Version</div>
         </Typography>
         <Typography>
-          The current version of the API is 1. The Game Characters API is an
-          open API, which means no authentication is required to query the data.
-          Since no authentication is needed, there is only support for GET
-          requests.
+        The Game Characters API is open source, which means no authentication is 
+        required to query the data.Since no authentication is needed, there is only 
+        support for GET requests. The current version of the API is 1.
         </Typography>
         <Typography variant="h4" align="center" className="title">
           <div id="rate">Rate limit</div>
@@ -306,9 +305,9 @@ const Documents = () => {
           <div id="single-name">Get a single character by name</div>
         </Typography>
         <Typography>
-          Endpoint that retrieve information by the name of the character, the
-          query is not case sensitive, so go ahead and use upper or lower case
-          to GET the data.
+        An endpoint that retrieves information by the name of the character, 
+        the query is not case sensitive, so go ahead and use upper or lower 
+        case to GET the data.
         </Typography>
         <CodeBlock
           language={language}
@@ -322,9 +321,9 @@ const Documents = () => {
           <div id="by-element">Get characters by key elements</div>
         </Typography>
         <Typography>
-          This endpoint queries an especific element that is contained within
-          the chacacter data. You can query one or multiple elements at once
-          adding comma (,) in between to find the characters with the chosen
+        This endpoint queries a specific element that is contained within
+          the character data. You can query one or multiple elements at once
+          , adding a comma (,) in between to find the characters with the chosen
           elements.
         </Typography>
         <CodeBlock
@@ -341,9 +340,9 @@ const Documents = () => {
           <div id="by-strength">Get characters by strength</div>
         </Typography>
         <Typography>
-          This endpoint queries an especific strength that a chacacter has. You
-          can query more options between commas and only the characters that has
-          both inputs will be displayed.
+        This endpoint queries a specific strength that a character has. 
+        You can query more options between commas, and only the characters 
+        with both inputs will be displayed.
         </Typography>
         <CodeBlock
           language={language}
@@ -360,8 +359,8 @@ const Documents = () => {
           <div id="by-weakness">Get characters by weakness</div>
         </Typography>
         <Typography>
-          This endpoint queries an especific weakness that a chacacter has. You
-          can query more options between commas and only the characters that has
+        This endpoint queries a specific weakness that a character has. You
+          can query more options between commas and only the characters that have
           all inputs will be displayed.
         </Typography>
         <CodeBlock
@@ -399,7 +398,7 @@ const Documents = () => {
         </Typography>
         <Typography>
           This endpoint queries one or more weapons per character. You can query
-          more options between commas and only the characters that has all
+          more options between commas and only the characters that have all
           inputs will be displayed.
         </Typography>
         <CodeBlock
@@ -417,9 +416,9 @@ const Documents = () => {
           <div id="by-location">Get characters by location</div>
         </Typography>
         <Typography>
-          This endpoint queries locations that a character was seen through out
-          the game. You can query more options between commas and only the
-          characters that has been in all places mentioned will be displayed.
+        This endpoint queries locations where a character was seen throughout
+          the game. You can query more options between commas, and only the
+          characters that have been in all places mentioned will be displayed.
         </Typography>
         <CodeBlock
           language={language}
@@ -433,22 +432,19 @@ const Documents = () => {
         </Typography>
         <CodeBlock />
         <Typography variant="h3" align="center" className="title">
-          <div id="collaboration"> Collaboration</div>
-        </Typography>
-        <Typography variant="h3" align="center" className="title">
           <div id="errors"> Errors</div>
         </Typography>
         <Typography>
-          All the query requests are programmed with status code accordinly with 
+          All the query requests are programmed with status code accordingly with 
           the standard best practices.
         </Typography>
         <Typography variant="h3" align="center" className="title">
           <div id="collaboration"> Collaboration</div>
         </Typography>
         <Typography>
-          Our intention is to continue working and developing better features for
+        We intend to continue working and developing better features for
           this project, so don't be shy; we would love to hear your suggestions and
-          in case you are interest in collaborate within this project feel free to contact us
+          in case you are interested in collaborating on this project, feel free to contact us
           directly or open a pull request.🙂
         </Typography>
       </div>
