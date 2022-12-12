@@ -23,7 +23,7 @@ There is a rate limit of 60 requests per hour from each IP address to prevent ha
 
 ## Base Url
 
-https://game-api-backend.onrender.com
+https://game-api-backend.onrender.com/playground
 
 ## Character Attributes
 
